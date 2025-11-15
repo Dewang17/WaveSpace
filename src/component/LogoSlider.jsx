@@ -25,8 +25,8 @@ const logos = [
 
 export default function LogoSlider() {
   return (
-    <section className="py-16 bg-white">
-      <div className="container px-10 mx-10 text-center ">
+    <section className="py-16 bg-white mx-auto">
+      <div className="container  text-center ">
         <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-10">
           Trusted by 500+ global companies
         </h2>
@@ -52,7 +52,7 @@ export default function LogoSlider() {
               <img
                 src={logo}
                 alt={`Logo ${index + 1}`}
-                className="h-8 md:h-10 mx-8 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="h-8 md:h-[2rem] mr-[4.5rem] opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             </SwiperSlide>
           ))}
