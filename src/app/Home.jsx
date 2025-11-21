@@ -15,6 +15,7 @@ import ImageSlider from "@/component/ImageSlider";
 import PersonSlider from "@/component/PersonSlider";
 import Sliderr from "@/component/Sliderr";
 import Testimonial from "@/component/Testimonial";
+import LogoSlider from "@/component/LogoSlider";
 
 // import Form from "../component/Form";
 const page = () => {
@@ -123,7 +124,7 @@ const page = () => {
       a: "Yes, we build production-ready frontends and MVPs using React, Next.js, and Webflow.",
     },
   ];
- 
+
   const [index, setindex] = useState(0);
   const [open, setOpen] = useState(null);
 
@@ -136,95 +137,95 @@ const page = () => {
   return (
     <>
       <div className="mt-20">
-        <section className=" w-full flex items-center justify-between px-10 lg:px-20 py-20">
-          {/* Left */}
-          <div className="max-w-4xl space-y-2 ">
-            <div className="inline-flex items-center border border-gray-100 gap-2 px-3 py-1 rounded-full text-[12px] font-medium">
-              <span className="h-3 w-3 bg-[#adff3e] rounded-full"></span>
-              Available for New Projects
-            </div>
-
-            <h1 className="text-[56px] lg:text-7xl font-[700] leading-tight tracking-tight">
-              Global UX design
-              <br /> agency digital partner
-              <br /> for{" "}
-              <span
-                key={index}
-                className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent animate-slideUp"
-              >
-                {words[index]}
-              </span>
-            </h1>
-
-            <div className="flex items-center gap-6 pt-6">
-              <button className="bg-[#242424] text-white px-9 py-6 rounded-full font-semibold hover:bg-blue-500 transition cursor-pointer duration-300">
-                Book a call
-              </button>
-              <button className="bg-white text-gray-700 text-lg border-1 border-gray-300 px-6 py-5 rounded-full font-semibold hover:opacity-90 transition duration-300 cursor-pointer flex items-center gap-3">
-                <img
-                  src="/images/icon/icon1.svg"
-                  alt="icon"
-                  className="w-7 h-7"
-                />
-                <span>View work</span>
-              </button>
-            </div>
-          </div>
-
-          {/* Right */}
-          <div className="max-w-sm hidden lg:block">
-            <p className="text-[18px] leading-relaxed text-black-600 font-[500]">
-              Wavespace is a global UX agency that helps brands scale with fast,
-              high performance digital experiences.
-            </p>
-
-            <div className="flex flex-wrap items-center justify-between gap-6 mt-6">
-              {/* Loved by Founders */}
-              <div className="flex items-center gap-2">
-                <img
-                  src="/images/man1.webp"
-                  className="h-8 w-8 rounded-full"
-                  alt="Founder 1"
-                />
-                <img
-                  src="/images/man2.webp"
-                  className="h-8 w-8 rounded-full"
-                  alt="Founder 2"
-                />
-                <img
-                  src="/images/man3.webp"
-                  className="h-8 w-8 rounded-full"
-                  alt="Founder 3"
-                />
-                <span className="font-semibold text-gray-800">
-                  Loved by 500+ Founders
-                </span>
+        <section className="w-full flex flex-col lg:flex-col px-6 md:px-12 lg:px-20 py-16 lg:py-24">
+          {/* TOP: GLOBAL UX + REVIEW SIDE BY SIDE ON LG */}
+          <div className="w-full flex flex-col md:flex-col lg:flex-row justify-between items-center gap-10">
+            {/* Global UX BLOCK */}
+            <div className="w-full lg:w-3/4 space-y-4">
+              <div className="inline-flex items-center border border-gray-200 gap-2 px-3 py-1 rounded-full text-xs sm:text-[13px] font-medium">
+                <span className="h-3 w-3 bg-[#adff3e] rounded-full"></span>
+                Available for New Projects
               </div>
 
-              {/* Clutch Reviews */}
-              <div className="flex items-center gap-3">
-                <Image
-                  src="/images/icon/clutch.jpg"
-                  alt="Clutch"
-                  width={42}
-                  height={42}
-                />
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-yellow-500 text-lg">
-                        ★
-                      </span>
-                    ))}
+              <h1 className="text-[34px] sm:text-[42px] md:text-[52px] lg:text-[64px] xl:text-[82px] font-[700] leading-tight tracking-tight">
+                Global UX design <br />
+                agency digital partner <br />
+                for{" "}
+                <span
+                  key={index}
+                  className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent animate-slideUp"
+                >
+                  {words[index]}
+                </span>
+              </h1>
+            </div>
+
+            {/* REVIEW BLOCK */}
+            <div className="w-full lg:w-1/4 lg:pt-30 ">
+              <p className="text-[16px] sm:max-w-[300px]  md:max-w-[500px] md:text-[18px] leading-relaxed text-black font-[500]">
+                Wavespace is a global UX agency that helps brands scale with
+                fast, high performance digital experiences.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-6 mt-6 md:justify-start">
+                <div className="flex items-center gap-2">
+                  <img
+                    src="/images/man1.webp"
+                    className="h-8 w-8 rounded-full"
+                  />
+                  <img
+                    src="/images/man2.webp"
+                    className="h-8 w-8 rounded-full"
+                  />
+                  <img
+                    src="/images/man3.webp"
+                    className="h-8 w-8 rounded-full"
+                  />
+                  <span className="font-semibold text-gray-800">
+                    Loved by 500+ Founders
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/images/icon/clutch.jpg"
+                    width={42}
+                    height={42}
+                    alt="Clutch"
+                  />
+                  <div>
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <span key={i} className="text-yellow-500 text-lg">
+                          ★
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-sm font-semibold text-gray-700">
+                      13 REVIEWS
+                    </p>
                   </div>
-                  <p className="text-sm font-semibold text-gray-700">
-                    13 REVIEWS
-                  </p>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* BUTTONS BELOW BOTH BLOCKS */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pt-10">
+            <button className="bg-[#242424] text-white px-7 py-4 sm:px-9 sm:py-5 rounded-full font-semibold hover:bg-blue-500 transition duration-300 cursor-pointer w-full sm:w-auto">
+              Book a call
+            </button>
+
+            <button className="bg-white text-gray-700 border border-gray-300 px-6 py-4 sm:py-5 rounded-full text-base sm:text-lg font-semibold hover:opacity-90 transition duration-300 cursor-pointer flex items-center gap-3 w-full sm:w-auto">
+              <img
+                src="/images/icon/icon1.svg"
+                className="w-6 h-6 sm:w-7 sm:h-7"
+              />
+              <span>View work</span>
+            </button>
+          </div>
         </section>
+
         <section className="flex justify-center bg-gray-50 items-center">
           <div className="bg-gray-200 h-[750px] w-[1350px] flex justify-center items-center">
             <video
@@ -239,10 +240,10 @@ const page = () => {
         </section>
 
         <section>
-          <Slider2 />
+          <LogoSlider />
         </section>
 
-       <Testimonial/>
+        <Testimonial />
 
         <section className="px-10 py-12">
           <h1 className="text-6xl font-semibold leading-tight max-w-8xl px-10">
@@ -341,8 +342,6 @@ const page = () => {
           </div>
         </section>
         <Sliderr />
-
-        
 
         <PersonSlider />
         <section id="contact" className="py-20 bg-white">

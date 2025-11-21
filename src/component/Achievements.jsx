@@ -44,7 +44,7 @@ export default function Achievements() {
       {/* Background */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/purple.jpg')" }}
+        style={{ backgroundImage: "url('/images/backgroundImg.webp')" }}
       ></div>
 
       <div className="max-w-[1440px] mx-auto px-6 flex flex-col gap-28">

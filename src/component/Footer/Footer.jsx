@@ -148,15 +148,18 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full bg-black py-10 px-6 md:px-8 pt-10">
-        <div className="max-w-9xl mx-auto flex items-center justify-between">
+      <div className="w-full bg-black py-10 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
           {/* LEFT SIDE */}
-          <h1 className="text-lg text-[#B9B9B9]">wavespace LLC © 2025</h1>
+          <h1 className="text-lg text-[#B9B9B9] whitespace-nowrap">
+            wavespace LLC © 2025
+          </h1>
 
-          <div className="flex flex-row gap-6">
+          {/* CENTER + FLAGS + RIGHT IMAGES WRAPPER */}
+          <div className="flex flex-col md:flex-row items-center gap-6">
             {/* CENTER TEXT + FLAGS */}
-            <div className="flex items-center gap-3">
-              <h2 className="text-sm text-[#B9B9B9]">
+            <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+              <h2 className="text-sm text-[#B9B9B9] leading-tight">
                 Wavespace is a limited liability company based in
               </h2>
 
@@ -183,50 +186,25 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* RIGHT SIDE — GROUP IMAGES */}
+            {/* RIGHT SIDE — OVERLAPPED TEAM IMAGES */}
             <div className="flex -space-x-3">
-              <Image
-                src="/images/man1.webp"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-black"
-                alt="team"
-              />
-              <Image
-                src="/images/man2.webp"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-black"
-                alt="team"
-              />
-              <Image
-                src="/images/man3.webp"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-black"
-                alt="team"
-              />
-              <Image
-                src="/images/man3.webp"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-black"
-                alt="team"
-              />
-              <Image
-                src="/images/man3.webp"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-black"
-                alt="team"
-              />
-              <Image
-                src="/images/man3.webp"
-                width={40}
-                height={40}
-                className="rounded-full border-2 border-black"
-                alt="team"
-              />
+              {[
+                "/images/man1.webp",
+                "/images/man2.webp",
+                "/images/man3.webp",
+                "/images/man3.webp",
+                "/images/man3.webp",
+                "/images/man3.webp",
+              ].map((src, i) => (
+                <Image
+                  key={i}
+                  src={src}
+                  width={40}
+                  height={40}
+                  className="rounded-full border-2 border-black"
+                  alt="team"
+                />
+              ))}
             </div>
           </div>
         </div>

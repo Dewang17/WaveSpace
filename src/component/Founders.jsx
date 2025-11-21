@@ -31,97 +31,82 @@ import Image from "next/image";
 export default function Founders() {
   return (
     <>
-      <section className="px-6 md:px-10 py-20">
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-20 px-12">
+      <section className="px-6 md:px-10 py-20 lg:mx-auto sm:mx-auto md:mx-auto sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px]  xl:max-w-full">
+        <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-20 px-2 md:px-12 text-center md:text-left">
           500+ Founders trusted us. Get return
           <br />
           on your <span className="text-gray-400">investment, multiplied!</span>
         </h2>
 
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-12">
-        {testimonials.map((t, i) => (
-          <div key={i} className="space-y-5 text-left">
-            <div className="relative">
-              <Image
-                src={t.img}
-                alt={t.name}
-                width={500}
-                height={500}
-                className="rounded-md w-full h-[350px] object-cover grayscale"
-              />
-              <p className="absolute bottom-4 left-4 text-white text-xl font-semibold">
-                {t.brand}
-              </p>
-            </div>
-
-            <div>
-              <p className="font-semibold text-lg">/ {t.name}</p>
-              <p className="text-gray-700 text-sm mb-4">{t.role}</p>
-              <p className="text-black text-bold leading-relaxed">&quot;{t.review}&quot;</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
-
         <div className="w-full flex flex-col items-center justify-center mt-10">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-26">
+          <div
+            className="
+      flex flex-col 
+      md:flex-row 
+      items-center 
+      justify-center 
+      gap-10 md:gap-16
+      px-2
+    "
+          >
             {/* CARD 1 */}
-            <div className="flex flex-col max-w-sm">
-              <div className="relative w-[400px] h-[400px]">
+            <div className="flex flex-col max-w-sm w-full items-center md:items-start">
+              <div className="relative w-full max-w-[340px] md:w-[400px] h-[350px] md:h-[400px]">
                 <Image
                   src="/images/man1.webp"
                   alt="Profile"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                 />
               </div>
 
-              <h1 className="mt-4 text-lg font-medium text-left py-4">
+              <h1 className="mt-4 text-lg font-medium text-left py-4 w-full">
                 Matt Kabus <br /> CEO of Lifetales
               </h1>
-              
-              <p className="text-black text-md mb-4">
+
+              <p className="text-black text-md mb-4 w-full text-left">
                 “Wavespace is a fantastic design team, with a healthy blend of
                 UI and UX skills. Highly recommended.”
               </p>
             </div>
 
-            {/* CARD 2 — shifted down without padding */}
-            <div className="flex flex-col max-w-sm transform md:translate-y-12">
-              <div className="relative w-[400px] h-[500px]">
+            {/* CARD 2 */}
+            <div className="flex flex-col max-w-sm w-full items-center md:items-start transform md:translate-y-12">
+              <div className="relative w-full max-w-[340px] md:w-[400px] h-[420px] md:h-[500px]">
                 <Image
                   src="/images/man2.webp"
                   alt="Profile"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                 />
               </div>
-<h1 className="mt-4 text-lg font-medium text-left py-4">
+
+              <h1 className="mt-4 text-lg font-medium text-left py-4 w-full">
                 Matt Kabus <br /> CEO of Lifetales
               </h1>
-              
-              <p className="text-black text-md mb-4">
+
+              <p className="text-black text-md mb-4 w-full text-left">
                 “Wavespace is a fantastic design team, with a healthy blend of
                 UI and UX skills. Highly recommended.”
               </p>
             </div>
 
             {/* CARD 3 */}
-            <div className="flex flex-col max-w-sm">
-              <div className="relative w-[400px] h-[400px]">
+            <div className="flex flex-col max-w-sm w-full items-center md:items-start">
+              <div className="relative w-full max-w-[340px] md:w-[400px] h-[350px] md:h-[400px]">
                 <Image
                   src="/images/man3.webp"
                   alt="Profile"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                 />
               </div>
 
-              <h1 className="mt-4 text-lg font-medium text-left py-4">
+              <h1 className="mt-4 text-lg font-medium text-left py-4 w-full">
                 Matt Kabus <br /> CEO of Lifetales
               </h1>
-              
-              <p className="text-black text-md mb-4">
+
+              <p className="text-black text-md mb-4 w-full text-left">
                 “Wavespace is a fantastic design team, with a healthy blend of
                 UI and UX skills. Highly recommended.”
               </p>

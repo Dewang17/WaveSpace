@@ -11,47 +11,46 @@ import {
   Box,
   Search,
   Zap,
+  Menu,
+  X,
 } from "lucide-react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScroll, setLastScroll] = useState(0);
   const pathname = usePathname();
 
-  // Define custom navbar backgrounds for routes
   const navbarBg =
     pathname === "/service"
-      ? "bg-[#000054]" // blue
+      ? "bg-[#000054]"
       : pathname === "/pricing"
-      ? "bg-black" // black
-      : "bg-white"; // default
+      ? "bg-black"
+      : "bg-white";
 
-  // Change text color based on background
   const textColor =
     pathname === "/service" || pathname === "/pricing"
       ? "text-white"
       : "text-black";
 
-  // underline color based on background
   const underlineColor =
     pathname === "/service" || pathname === "/pricing"
       ? "after:bg-white"
       : "after:bg-gray-800";
 
+  // Hide navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const currentScroll = window.scrollY;
-
-      if (currentScroll > lastScroll) {
+      const current = window.scrollY;
+      if (current > lastScroll) {
         setShowNavbar(false);
       } else {
         setShowNavbar(true);
       }
-
-      setLastScroll(currentScroll);
+      setLastScroll(current);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -61,26 +60,30 @@ export default function Navbar() {
   return (
     <nav
       className={`
-        w-full fixed top-0 left-0 z-50 transition-transform duration-300 
+        fixed top-0 left-0 w-full z-50 transition-transform duration-300 md:py-5
         ${showNavbar ? "translate-y-0" : "-translate-y-full"}
         ${navbarBg} ${textColor}
       `}
     >
-      <div className="container mx-auto flex justify-between items-center px-20 py-4">
-        {/* Logo */}
-        <Link
-          href="/"
-          className={`text-2xl font-semibold tracking-tight ${textColor}`}
-        >
+      <div className="container mx-0 md:mx-auto flex justify-between items-center px-6 md:px-8 lg:px-12 py-4">
+        {/* LOGO */}
+        <Link href="/" className={`text-2xl font-semibold ${textColor}`}>
           <span className="font-bold">wave</span>space
         </Link>
 
-        {/* Menu Wrapper */}
-        <Link
-          href="/service"
-          className={`hidden md:flex space-x-8 text-lg relative font-medium ${textColor}`}
+        {/* HAMBURGER for sm/md */}
+        <button
+          className="lg:hidden text-3xl"
+          onClick={() => setMobileMenu(true)}
         >
-          {/* Services Menu */}
+          <Menu size={30} />
+        </button>
+
+        {/* DESKTOP MENU (unchanged design) */}
+        <div
+          className={`hidden lg:flex space-x-8 text-lg font-medium px-4 ${textColor}`}
+        >
+          {/* SERVICES DROPDOWN (Desktop Only) */}
           <div
             className="relative"
             onMouseEnter={() => setOpen(true)}
@@ -88,20 +91,20 @@ export default function Navbar() {
           >
             <button
               className={`
-                cursor-pointer relative flex items-center gap-2 
-                ${textColor}
-                after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] 
-                ${underlineColor}
-                after:transition-all after:duration-300 hover:after:w-full
-              `}
+              cursor-pointer relative flex items-center gap-2 ${textColor}
+              after:content-[''] after:absolute after:left-0 after:bottom-0
+              after:w-0 after:h-[2px] ${underlineColor}
+              after:transition-all after:duration-300 hover:after:w-full
+            `}
             >
               <span>Services</span>
               <MdOutlineArrowOutward className="text-[16px]" />
             </button>
 
-            {/* Mega Menu */}
+            {/* MEGA MENU */}
             <div
-              className={`absolute left-0 top-full mt-4 w-[950px] bg-white shadow-2xl border border-gray-100 rounded-3xl p-8 flex gap-8 transition-all duration-200 ${
+              className={`absolute left-0 top-full mt-4 w-[950px] bg-white shadow-2xl border border-gray-100 rounded-3xl p-8 flex gap-8 transition-all duration-200
+              ${
                 open
                   ? "opacity-100 visible translate-y-0"
                   : "opacity-0 invisible -translate-y-2"
@@ -125,7 +128,7 @@ export default function Navbar() {
                   <Link
                     key={i}
                     href="#"
-                    className="flex items-center gap-3 text-gray-700 hover:text-black transition-colors"
+                    className="flex items-center gap-3 text-gray-700 hover:text-black"
                   >
                     <span className="bg-indigo-600 text-white p-2 rounded-full">
                       <item.icon size={18} />
@@ -135,34 +138,22 @@ export default function Navbar() {
                 ))}
               </div>
 
-              {/* Right card */}
-              <div className="w-[250px] bg-gradient-to-br from-indigo-500 to-indigo-300 rounded-2xl p-6 text-white flex flex-col justify-between shadow-lg">
-                <div>
-                  <div className="bg-white/20 w-10 h-10 flex items-center justify-center rounded-full mb-4">
-                    <span className="font-bold text-lg">w</span>
-                  </div>
-                  <h3 className="text-lg font-semibold">
-                    Subscription Services
-                  </h3>
-                  <p className="text-sm mt-2 text-white/90">
-                    One subscription, unlimited design requests for your
-                    business.
-                  </p>
-                </div>
+              <div className="w-[250px] bg-gradient-to-br from-indigo-500 to-indigo-300 text-white p-6 rounded-2xl">
+                <h3 className="text-lg font-semibold">Subscription Services</h3>
+                <p className="text-sm mt-2">
+                  One subscription, unlimited design requests.
+                </p>
                 <Link
                   href="#"
-                  className="relative hover:text-gray-900 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-gray-800 after:transition-all after:duration-300 hover:after:w-full"
+                  className="mt-4 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all hover:after:w-full"
                 >
-                  <span>Contact Us</span>
-                  <span className="text-sm transition-transform duration-300 group-hover:translate-x-1">
-                    ↗
-                  </span>
+                  Contact Us ↗
                 </Link>
               </div>
             </div>
           </div>
 
-          {/* Other Menu Items */}
+          {/* OTHER MENU LINKS */}
           {[
             { href: "/case-studies", label: "Case studies", count: "09" },
             { href: "/pricing", label: "Pricing" },
@@ -172,12 +163,10 @@ export default function Navbar() {
             <Link
               key={i}
               href={item.href}
-              className={`
-                relative ${textColor}
+              className={`relative ${textColor}
                 after:content-[''] after:absolute after:left-0 after:bottom-0 
                 after:w-0 after:h-[2px] ${underlineColor}
-                after:transition-all after:duration-300 hover:after:w-full
-              `}
+                after:transition-all after:duration-300 hover:after:w-full`}
             >
               {item.label}
               {item.count && (
@@ -187,17 +176,61 @@ export default function Navbar() {
               )}
             </Link>
           ))}
-        </Link>
+        </div>
 
-        {/* Contact Button */}
+        {/* DESKTOP CONTACT BUTTON */}
         <Link
           href="#"
-          className="bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-7 py-4 hover:bg-indigo-700 transition-all flex items-center gap-2"
+          className="hidden lg:flex bg-[#3F2FEE] text-white font-bold rounded-full px-7 py-4 gap-2"
         >
-          <span>Contact Us</span>
-          <MdOutlineArrowOutward className="text-[20px]" />
+          Contact Us <MdOutlineArrowOutward className="text-[20px]" />
         </Link>
       </div>
+
+      {/* MOBILE MENU SLIDE-IN */}
+      {mobileMenu && (
+        <div
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm md:hidden animate-fadeIn"
+          onClick={() => setMobileMenu(false)}
+        >
+          <div
+            className="absolute right-0 top-0 h-full w-72 bg-[#000054] text-white p-6 shadow-2xl animate-slideIn"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="text-2xl mb-6"
+              onClick={() => setMobileMenu(false)}
+            >
+              <X size={28} />
+            </button>
+
+            <div className="space-y-6 text-lg font-medium">
+              <Link href="/service" className="block">
+                Services
+              </Link>
+              <Link href="/case-studies" className="block">
+                Case Studies
+              </Link>
+              <Link href="/pricing" className="block">
+                Pricing
+              </Link>
+              <Link href="/about" className="block">
+                About Us
+              </Link>
+              <Link href="/blog" className="block">
+                Blog
+              </Link>
+
+              <Link
+                href="#"
+                className="block mt-6 bg-white text-black text-center py-3 rounded-full font-semibold"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
