@@ -144,7 +144,7 @@ export default function Navbar() {
                   One subscription, unlimited design requests.
                 </p>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="mt-4 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all hover:after:w-full"
                 >
                   Contact Us ↗
@@ -180,7 +180,7 @@ export default function Navbar() {
 
         {/* DESKTOP CONTACT BUTTON */}
         <Link
-          href="#"
+          href="/contact"
           className="hidden lg:flex bg-[#3F2FEE] text-white font-bold rounded-full px-7 py-4 gap-2"
         >
           Contact Us <MdOutlineArrowOutward className="text-[20px]" />
