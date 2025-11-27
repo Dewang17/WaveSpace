@@ -222,7 +222,7 @@ export default function Navbar() {
               </Link>
 
               <Link
-                href="#"
+                href="/contact"
                 className="block mt-6 bg-white text-black text-center py-3 rounded-full font-semibold"
               >
                 Contact Us
