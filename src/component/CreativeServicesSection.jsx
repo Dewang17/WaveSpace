@@ -40,13 +40,13 @@ export default function CreativeServicesSection() {
             One subscription. all the{" "}
             <span className="text-gray-500">creative services you need</span>
           </h2>
-          <a
-            href="#"
+          <div
+            // href="#"
             className="bg-[#3f2fee] hover:bg-[#2d23b0] text-white font-medium text-[1rem] px-8 py-4 rounded-full flex items-center gap-2 transition-all duration-300"
           >
             Start designing
             <ArrowUpRight className="w-5 h-5" />
-          </a>
+          </div>
         </div>
 
         {/* Services Grid */}

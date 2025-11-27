@@ -242,13 +242,13 @@ export default function Page() {
               </ul>
 
               <div className="flex items-center gap-4 flex-wrap">
-                <a
-                  href="#"
+                <div
+                  
                   className="bg-[#4f46e5] hover:bg-[#4338ca] text-white text-base font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all duration-300"
                 >
                   Build your product
                   <ArrowUpRight className="w-4 h-4" />
-                </a>
+                </div>
               </div>
             </div>
           </div>
