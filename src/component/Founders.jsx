@@ -31,8 +31,8 @@ import Image from "next/image";
 export default function Founders() {
   return (
     <>
-      <section className="px-6 md:px-10 py-20 lg:mx-auto sm:mx-auto md:mx-auto sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px]  xl:max-w-full">
-        <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-20 px-2 md:px-12 text-center md:text-left">
+      <section className="px-6 md:px-10 py-20 lg:mx-auto sm:mx-auto md:mx-auto    xl:max-w-full">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold leading-tight  px-10  text-center md:text-left">
           500+ Founders trusted us. Get return
           <br />
           on your <span className="text-gray-400">investment, multiplied!</span>

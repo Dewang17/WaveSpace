@@ -5,18 +5,17 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 pt-20 px-10 md:px-12">
+    <footer className="bg-black text-gray-300 pt-20 px-6 md:px-12">
       {/* TOP SECTION */}
-      <div className="flex flex-col md:flex-row  gap-50 px-10">
+      <div className="flex flex-col md:flex-row gap-16 md:gap-20 max-w-7xl mx-auto">
         {/* Logo & Description */}
-        <div className="w-[400px]">
+        <div className="md:w-1/3">
           <h2 className="text-3xl font-bold text-white mb-4">wavespace</h2>
           <p className="text-[#B9B9B9] leading-relaxed mb-8 font-semibold">
             Wavespace is a global UI/UX design agency that boosts brand value
             with user-friendly, effective designs for web, mobile, and SaaS
             platforms.
           </p>
-
           <button className="flex items-center justify-between bg-[#E8FF52] text-black font-medium px-6 py-3 rounded-full w-fit hover:bg-[#d9f44d] transition-all cursor-pointer">
             Company Deck
             <span className="ml-2 bg-black text-white rounded-full p-1">
@@ -26,11 +25,11 @@ export default function Footer() {
         </div>
 
         {/* GRID LINKS */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 flex-1">
           {/* Services Column 1 */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-2xl">Services</h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-xl font-semibold">
+            <h3 className="text-white font-semibold mb-4 text-lg">Services</h3>
+            <ul className="space-y-3 text-[#B9B9B9] text-sm lg:text-lg   sm:font-semibold lg:font-bold">
               <li>
                 <Link href="#">UI UX Design</Link>
               </li>
@@ -53,8 +52,8 @@ export default function Footer() {
           </div>
 
           {/* Services Column 2 */}
-          <div>
-            <ul className="space-y-3 text-[#B9B9B9] mt-10 text-xl font-semibold">
+          <div className="mt-10">
+            <ul className="space-y-3 mt-10 sm:mt-0 text-[#B9B9B9] text-lg sm:text-xl font-semibold">
               <li>
                 <Link href="#">UX Audit</Link>
               </li>
@@ -75,10 +74,10 @@ export default function Footer() {
 
           {/* Case Studies */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-2xl">
+            <h3 className="text-white font-semibold mb-4 text-lg">
               Case studies
             </h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-xl font-semibold">
+            <ul className="space-y-3 text-[#B9B9B9] text-lg sm:text-xl font-semibold">
               <li>
                 <Link href="#">Open Hub</Link>
               </li>
@@ -99,8 +98,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-2xl">Contact</h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-xl font-semibold">
+            <h3 className="text-white font-semibold mb-4 text-lg">Contact</h3>
+            <ul className="space-y-3 text-[#B9B9B9] text-lg sm:text-xl font-semibold">
               <li>
                 <Link href="#">Clutch</Link>
               </li>
@@ -118,8 +117,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-b border-gray-800 mt-16 pt-8 flex flex-wrap justify-between items-center text-[#B9B9B9] text-lg pb-16">
-        <div className="flex gap-6">
+      {/* SOCIAL + CONTACT */}
+      <div className="border-b border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-[#B9B9B9] text-lg pb-16 gap-8 md:gap-0">
+        <div className="flex gap-6 flex-wrap">
           <Link href="#" className="hover:text-white">
             Instagram
           </Link>
@@ -134,7 +134,7 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="mt-8">
+        <div>
           <p className="text-white text-sm mb-1">Let's work together</p>
           <Link
             href="#"
@@ -148,22 +148,19 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* BOTTOM FOOTER */}
       <div className="w-full bg-black py-10 px-6 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
-          {/* LEFT SIDE */}
           <h1 className="text-lg text-[#B9B9B9] whitespace-nowrap">
             wavespace LLC © 2025
           </h1>
 
-          {/* CENTER + FLAGS + RIGHT IMAGES WRAPPER */}
           <div className="flex flex-col md:flex-row items-center gap-6">
-            {/* CENTER TEXT + FLAGS */}
+            {/* Center Text + Flags */}
             <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
               <h2 className="text-sm text-[#B9B9B9] leading-tight">
                 Wavespace is a limited liability company based in
               </h2>
-
-              {/* FLAGS */}
               <div className="flex items-center gap-1">
                 <Image
                   src="/images/icon/usa.webp"
@@ -186,7 +183,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* RIGHT SIDE — OVERLAPPED TEAM IMAGES */}
+            {/* Right Side — Overlapped Team Images */}
             <div className="flex -space-x-3">
               {[
                 "/images/man1.webp",

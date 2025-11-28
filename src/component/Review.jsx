@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export default function Testimonials() {
+export default function Review() {
   const swiperRef = useRef(null);
   return (
     <section className="bg-[#f0f0f0] overflow-hidden pt-10 md:pl-20 pl-6">
@@ -29,9 +29,10 @@ export default function Testimonials() {
             className="
     max-w-[1312px]
     font-bold
-    text-[2.89rem] leading-[1.3] tracking-[1px]
-    md:text-[2.7rem]
-    sm:text-[1.85rem]
+    text-[1.85rem] leading-[1.3] tracking-[1px]
+    md:text-[1.85rem]
+    lg:text-[2.5rem]
+   
    
   "
           >

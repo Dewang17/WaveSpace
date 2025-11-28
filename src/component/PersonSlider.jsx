@@ -7,21 +7,21 @@ const PersonSlider = () => {
     <>
       <div className="py-22">
         {/* Text + Button Row */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 px-10 pb-14">
-          <h1 className="text-3xl md:text-5xl font-semibold leading-tight md:max-w-5xl">
-            From Bangladesh to USA, we turn <br /> your{" "}
-            <span className="text-gray-500 font-semibold">
+        <div className="flex flex-col xl:flex-row items-start xl:items-start gap-6 justify-between px-10 pb-14">
+          <h1 className="text-3xl md:text-3xl lg:text-5xl font-semibold leading-[1.4] max-w-6xl">
+            From Bangladesh to USA, we turn <br />
+            your{" "}
+            <span className="text-[#29242469]">
               vision into creative impact
             </span>
           </h1>
 
-          <button className="bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-7 py-4 hover:bg-indigo-700 transition-all flex flex-row justify-center items-center gap-2">
-            <span>Contact Us</span>
+          <button className="shrink-0 bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-7 py-4 hover:bg-indigo-700 transition-all flex items-center gap-2">
+            <span>Build with Us</span>
             <MdOutlineArrowOutward className="text-[20px]" />
           </button>
         </div>
 
-       
         {/* Center Wrapper */}
         <div className="w-full flex justify-center overflow-hidden">
           {/* Marquee Row */}
