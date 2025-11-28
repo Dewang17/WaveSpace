@@ -7,11 +7,13 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 pt-20 px-6 md:px-12">
       {/* TOP SECTION */}
-      <div className="flex flex-col md:flex-row gap-16 md:gap-20 max-w-7xl mx-auto">
+      <div className="flex flex-col   lg:flex-row gap-16 md:gap-15  lg:gap-15 2xl:gap-20 max-w-full md:mx-auto 2xl:px-10">
         {/* Logo & Description */}
-        <div className="md:w-1/3">
-          <h2 className="text-3xl font-bold text-white mb-4">wavespace</h2>
-          <p className="text-[#B9B9B9] leading-relaxed mb-8 font-semibold">
+        <div className="lg:w-1/3 md:w-2/3 ">
+          <h2 className="2xl:text-3xl lg:text-2xl  font-bold text-white mb-4">
+            wavespace
+          </h2>
+          <p className="text-[#B9B9B9] leading-relaxed mb-8 md:text-xl lg:text-xl 2xl:text-2xl font-semibold ">
             Wavespace is a global UI/UX design agency that boosts brand value
             with user-friendly, effective designs for web, mobile, and SaaS
             platforms.
@@ -25,11 +27,13 @@ export default function Footer() {
         </div>
 
         {/* GRID LINKS */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 flex-1">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-col-4 gap-10  md:gap-15 lg:gap-10 2xl:gap-20 flex-1">
           {/* Services Column 1 */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">Services</h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-sm lg:text-lg   sm:font-semibold lg:font-bold">
+            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-2xl 2xl:text-3xl">
+              Services
+            </h3>
+            <ul className="space-y-3 text-[#B9B9B9] text-lg lg:text-xl 2xl:text-2xl  font-semibold lg:font-bold">
               <li>
                 <Link href="#">UI UX Design</Link>
               </li>
@@ -53,7 +57,7 @@ export default function Footer() {
 
           {/* Services Column 2 */}
           <div className="mt-10">
-            <ul className="space-y-3 mt-10 sm:mt-0 text-[#B9B9B9] text-lg sm:text-xl font-semibold">
+            <ul className="space-y-3 mt-10 sm:mt-0 text-[#B9B9B9] text-lg  lg:text-xl 2xl:text-2xl  font-semibold">
               <li>
                 <Link href="#">UX Audit</Link>
               </li>
@@ -74,10 +78,10 @@ export default function Footer() {
 
           {/* Case Studies */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">
+            <h3 className="text-white font-semibold mb-4  md:text-lg lg:text-xl 2xl:text-2xl">
               Case studies
             </h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-lg sm:text-xl font-semibold">
+            <ul className="space-y-3 text-[#B9B9B9] md:text-lg lg:text-xl sm:text-xl font-semibold">
               <li>
                 <Link href="#">Open Hub</Link>
               </li>
@@ -98,8 +102,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">Contact</h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-lg sm:text-xl font-semibold">
+            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-3xl">
+              Contact
+            </h3>
+            <ul className="space-y-3 text-[#B9B9B9] text-lg  lg:text-xl sm:text-xl font-semibold">
               <li>
                 <Link href="#">Clutch</Link>
               </li>

@@ -279,9 +279,9 @@ const page = () => {
         </section>
 
         <Founders />
-        <section className="bg-black w-full py-20 px-10">
+        <section className="bg-black w-full py-20 lg:px-10 md:px-4">
           <div className=" px-6">
-            <h1 className="text-white text-5xl font-semibold leading-tight">
+            <h1 className="text-white text-3xl md:text-5xl font-semibold leading-tight">
               We deliver on time, in days and weeks <br />
               <span className="text-[#555555]">— not months.</span>
             </h1>

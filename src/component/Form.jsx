@@ -16,11 +16,11 @@ export default function Form() {
   };
 
   return (
-    <section className="bg-[#F0F0F0] min-h-screen flex flex-col justify-center py-26 px-6 md:px-16 lg:px-22">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <section className="bg-[#F0F0F0] min-h-screen flex flex-col justify-center md:py-15 px-6 lg:px-16 xl:px-22">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left Section */}
         <div>
-          <h2 className="text-6xl font-bold text-gray-900 mb-4 leading-17 pb-8">
+          <h2 className=" text-4xl md:text-6xl text-4xl font-bold text-gray-900 mb-4  md:leading-1.35 lg:leading-17 pb-8">
             Have a Project?
             <br /> Let's talk!
           </h2>
