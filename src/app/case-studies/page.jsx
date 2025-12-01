@@ -85,14 +85,14 @@ const Home = () => {
     "Conversation rate optimization (CRO)",
   ];
   return (
-    <div className="bg-white text-black mt-25">
-      <section className="px-10 py-12">
-        <h1 className="text-6xl font-bold leading-[1.3em] px-14">
+    <div className="bg-white text-black mt-25 mx-auto">
+      <section className="md:px-10 py-12 2xl:mx-10 px-5">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold leading-[1.3em] ">
           Where creativity meets <br />
           <span className="text-[#29242469] ">success in our work</span>
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-[5em] px-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 ">
           {data.map((read, index) => (
             <div key={index} className="flex flex-col group cursor-pointer">
               <div className="overflow-hidden ">
@@ -111,15 +111,15 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <section className="bg-black w-full py-20 px-10">
-        <div className=" px-6">
-          <h1 className="text-white text-5xl font-semibold leading-tight">
+      <section className="bg-black w-full py-20 md:px-5 lg:px-10 px-5 ">
+        <div className="2xl:mx-10">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl  font-semibold leading-tight">
             We deliver on time, in days and weeks <br />
             <span className="text-[#555555]">— not months.</span>
           </h1>
         </div>
 
-        <div className="flex flex-col lg:flex-row px-8 gap-16 mt-16">
+        <div className="flex flex-col lg:flex-row  gap-16 mt-16 2xl:mx-10">
           {/* LEFT BOX */}
           <div className="bg-[#333333] p-10 lg:w-[65%] w-full space-y-6 border border-gray-800">
             <p className="text-white text-2xl font-normal">
@@ -167,7 +167,7 @@ const Home = () => {
           </div>
         </div>
         <div className="px-6 pt-14">
-          <h1 className="text-white text-5xl font-semibold leading-tight">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-4xl 2xl:text-4xl  font-semibold leading-tight">
             From startup to enterprise, grow your business <br />
             <span className="text-[#555555]">
               with fast and creative designs!

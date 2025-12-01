@@ -25,7 +25,7 @@ const logos = [
 
 export default function LogoSlider() {
   return (
-    <section className="py-16 bg-white mx-auto px-20">
+    <section className="py-16 bg-white mx-auto sm:px-3 md:px-20">
       <div className="container text-center mx-auto">
         <h2 className="text-xl md:text-2xl font-semibold text-gray-800 mb-10">
           Trusted by 500+ global companies

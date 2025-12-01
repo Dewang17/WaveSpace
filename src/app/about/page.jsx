@@ -65,7 +65,7 @@ export default function Page() {
     <div>
       <section className="w-full flex items-center justify-between px-10 lg:px-28 py-30">
         <div>
-          <h1 className="text-5xl lg:text-7xl font-[1000] leading-tight tracking-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-[1000] leading-tight tracking-tight">
             Designed for billions, and we are the team behind{" "}
             <span className="inline-block bg-gradient-to-r from-orange-500 to-blue-700 bg-clip-text text-transparent animate-slideUp">
               future unicorns.
@@ -82,13 +82,12 @@ export default function Page() {
       </section>
 
       <section>
-        
-        <LogoSlider/>
+        <LogoSlider />
       </section>
-   <Testimonial/>
+      <Testimonial />
 
-      <section className="w-full bg-[#f5f5f5] py-24 px-6 md:px-16 lg:px-28">
-        <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-black">
+      <section className="w-full bg-[#f5f5f5] py-24 px-6 md:px-10 lg:px-10 2xl:px-28">
+        <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-semibold leading-tight text-black">
           From one laptop to 22+ countries, we helps bold visions become{" "}
           <span className="text-[#29242469]">intuitive brands.</span>
         </h2>
@@ -107,7 +106,7 @@ export default function Page() {
           {/* RIGHT TEXT CONTENT */}
           <div className="flex flex-col gap-22">
             <div>
-              <p className="text-black text-xl leading-relaxed font-normal">
+              <p className="text-black text-lg  md:text-xl leading-relaxed font-normal">
                 Wavespace didn't start in a co-working space or some glossy
                 VC-funded setup. It started in a small bedroom, just one laptop,
                 a noisy fan, and a founder who couldn't stop thinking about why
@@ -115,21 +114,21 @@ export default function Page() {
               </p>
               <br />
 
-              <p className="text-black text-xl leading-relaxed font-normal">
+              <p className="text-blacktext-lg  md:text-xlleading-relaxed font-normal">
                 So we helped early teams fix broken onboarding, redesign
                 confusing UX, and turn messy ideas into real products. One
                 founder at a time.
               </p>
               <br />
 
-              <p className="text-black text-xl leading-relaxed font-normal">
+              <p className="text-black text-lg  md:text-xl leading-relaxed font-normal">
                 But now? Wavespace works with 500+ startups, helps teams launch
                 faster MVPs, improve conversion, and build systems that scale.
                 Our design now powers 100M+ users across 22 countries, from
                 early-stage AI tools to Series B SaaS giants.
               </p>
               <br />
-              <p className="text-black text-xl leading-relaxed font-normal ">
+              <p className="text-black text-lg  md:text-xl leading-relaxed font-normal ">
                 But honestly? We still build like it's day one, fast, honest,
                 human. Behind every screen is someone betting it all on an idea.
               </p>
@@ -142,7 +141,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-white py-24 px-6 md:px-16 lg:px-32">
+      <section className="w-full bg-white py-24 px-6 md:px-10 xl:px-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT IMAGE */}
           <div className="flex justify-center lg:justify-start">
@@ -157,7 +156,7 @@ export default function Page() {
 
           {/* RIGHT SIDE TEXT */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-extrabold text-black leading-tight">
               Why Wavespace? We care <br /> like co-founders.
             </h2>
 
@@ -188,7 +187,7 @@ export default function Page() {
 
         {/* BOTTOM SUB SECTION */}
         <div className="max-w-7xl mx-auto mt-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-          <h3 className="text-4xl md:text-5xl font-extrabold text-black leading-tight">
+          <h3 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-extrabold text-black leading-tight">
             From vision to velocity, we are <br />
             <span className="text-gray-500">all in one place.</span>
           </h3>
@@ -200,8 +199,8 @@ export default function Page() {
       </section>
       {/* We don’t just design. We believe, then deliver. */}
       <section>
-        <section className="bg-white py-20 px-6 md:px-12 lg:px-24">
-          <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+        <section className="bg-white py-20 px-6 md:px-12 xl:px-24">
+          <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-1 gap-12 md:gap-20 items-center">
             {/* LEFT IMAGE */}
             <div className="relative w-full">
               <div className=" overflow-hidden shadow-md">
@@ -218,7 +217,7 @@ export default function Page() {
 
             {/* RIGHT CONTENT */}
             <div className="flex flex-col justify-center text-gray-900">
-              <h2 className="text-[2.8rem] leading-tight font-semibold mb-6">
+              <h2 className=" text-4xl md:text-[2.8rem] leading-tight font-semibold mb-6">
                 We don't just design.{" "}
                 <span className="text-gray-400 font-semibold mb-6">
                   We believe, then deliver.
@@ -242,10 +241,7 @@ export default function Page() {
               </ul>
 
               <div className="flex items-center gap-4 flex-wrap">
-                <div
-                  
-                  className="bg-[#4f46e5] hover:bg-[#4338ca] text-white text-base font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all duration-300"
-                >
+                <div className="bg-[#4f46e5] hover:bg-[#4338ca] text-white text-base font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all duration-300">
                   Build your product
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
@@ -323,7 +319,7 @@ export default function Page() {
 
             {/* Quote Text */}
             <div className="flex flex-col justify-start items-start w-full">
-              <p className="text-[1.75rem] leading-[1.54] tracking-[0.28px] max-md:text-[1.125rem] text-white/90">
+              <p className="text-[1.125rem] lg:text-[1.75rem] leading-[1.54] tracking-[0.28px] max-md:text-[1.125rem] text-white/90">
                 "Like most kids from a middle-class home, I aimed for
                 engineering. Design? Never crossed my mind. But when my uncle
                 nudged me toward graphic arts, I followed, not out of passion,
@@ -347,7 +343,7 @@ export default function Page() {
             />
           </div>
         </div>
-        <div className="container mx-auto flex justify-between items-start gap-[7.75rem] max-md:flex-col max-md:gap-[2.5rem] max-md:mb-[4rem] mb-[9.75rem] pt-[7.5rem] px-6 md:px-10">
+        <div className=" mx-auto flex justify-between md:items-start items-center gap-[7.75rem] max-lg:flex-col max-lg:gap-[2.5rem] max-md:mb-[4rem] mb-[9.75rem] pt-[7.5rem] px-6 md:px-10">
           {/* --- Left: Text Grid --- */}
           <div className="grid grid-cols-2 gap-x-[4.5rem] gap-y-[2.5rem] w-full max-md:grid-cols-1 max-md:gap-y-[2rem]">
             <p className="text-[1rem] leading-[1.54] max-md:text-[1.125rem] text-white/90">
@@ -406,7 +402,7 @@ export default function Page() {
           </div>
 
           {/* --- Right: Author Image --- */}
-          <div className="flex flex-col items-start max-w-[25rem] w-full flex-none max-md:hidden">
+          <div className="flex flex-col md:items-start md:justify-center max-w-[25rem] w-full md:mx-auto flex-none max-md:hidden">
             <div className="text-[1.125rem] font-medium">Shahid Miah</div>
             <div className="text-[#b9b9b9] text-[0.875rem] mt-1 mb-12">
               2025, we growing fast with unicorn energy
@@ -457,12 +453,12 @@ export default function Page() {
       <section className="bg-white text-black py-[7rem] max-md:py-[4rem]">
         <div className="container mx-auto flex flex-col px-6 md:px-10 max-w-[1440px]">
           {/* --- Top Text Section --- */}
-          <div className="flex justify-between items-end flex-wrap gap-[6rem] max-md:gap-[2rem] max-md:flex-col">
-            <div className="text-[2rem] font-semibold max-md:text-[1.25rem]">
+          <div className="flex justify-between items-end flex-wrap gap-[2rem] max-md:gap-[1rem] max-md:flex-col">
+            <h3 className="text-[2rem] font-medium max-md:text-[1.25rem] xl:pb-52 ">
               Meet our creatives
-            </div>
-            <div className="max-w-[60%] max-md:max-w-full">
-              <h3 className="text-[2.5rem] leading-[1.3em] font-bold max-md:text-[1.875rem]">
+            </h3>
+            <div className="max-w-[70%] max-lg:max-w-full">
+              <h3 className="text-[30px] md:text-[40px] lg:text-[50px] leading-[1.3em] font-bold max-md:text-[1.875rem]">
                 We are your product geek, UX mind, UI lovers, & Webflow
                 builders. <br className="hidden md:block" />
                 Your creative team,{" "}
@@ -477,10 +473,10 @@ export default function Page() {
             <div className="flex flex-col justify-center items-start border border-[#eeedec] rounded-[1.25rem] p-[2rem] gap-[9.25rem] max-md:p-[1.25rem]">
               <div className="text-[#7e7e81] text-[1rem]">/01</div>
               <div className="flex flex-col gap-[4px]">
-                <div className="text-[3.5rem] font-bold leading-[1.35] max-md:text-[2rem]">
+                <div className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35] max-md:text-[2rem]">
                   Dhaka
                 </div>
-                <p className="text-[#3a3a3a] text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
+                <p className="text-[#3a3a3a] text-[1rem] lg:text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
                   Global team working from SF, Berlin,
                   <br />
                   KL, Jakarta, Sydney
@@ -492,10 +488,10 @@ export default function Page() {
             <div className="flex flex-col justify-center items-start border border-[#eeedec] rounded-[1.25rem] p-[2rem] gap-[9.25rem] max-md:p-[1.25rem]">
               <div className="text-[#7e7e81] text-[1rem]">/02</div>
               <div className="flex flex-col gap-[4px]">
-                <div className="text-[3.5rem] font-bold leading-[1.35] max-md:text-[2rem]">
+                <div className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35] max-md:text-[2rem]">
                   15+
                 </div>
-                <p className="text-[#3a3a3a] text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
+                <p className="text-[#3a3a3a] text-[1rem] lg:text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
                   Industries served
                   <br />
                   (AI, SaaS, Fintech, Health, B2B, more)
@@ -507,10 +503,10 @@ export default function Page() {
             <div className="flex flex-col justify-center items-start border border-[#eeedec] rounded-[1.25rem] p-[2rem] gap-[9.25rem] max-md:p-[1.25rem]">
               <div className="text-[#7e7e81] text-[1rem]">/03</div>
               <div className="flex flex-col gap-[4px]">
-                <div className="text-[3.5rem] font-bold leading-[1.35] max-md:text-[2rem]">
+                <div className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35] max-md:text-[2rem]">
                   10M+ users
                 </div>
-                <p className="text-[#3a3a3a] text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
+                <p className="text-[#3a3a3a] text-[1rem] lg:text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
                   Marketplace users served
                   <br />
                   across 10+ time zones
@@ -520,7 +516,7 @@ export default function Page() {
           </div>
         </div>
         {/* TEAM GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-6 mt-20 mb-20 px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-6 mt-20 mb-20 px-5 lg:px-12">
           {/* Team Members Inline */}
           <div className="flex flex-col items-start">
             <div className="w-full overflow-hidden ">
@@ -590,10 +586,10 @@ export default function Page() {
         </div>
 
         {/* BELIEFS SECTION */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-10 px-12">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-10 px-5 lg:px-12">
           {/* LEFT SIDE TITLE */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-[3.5rem] md:text-[2.7rem] sm:text-[2rem] font-bold leading-[1.35]">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35]">
               The beliefs{" "}
               <span className="text-[#29242469]">
                 behind <br /> the builds
@@ -607,7 +603,7 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">01</div>
               <div className="flex flex-col gap-3">
                 <div className="text-[1.5rem] font-bold">Empathy</div>
-                <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                <p className=" md:text-[1rem] leading-[1.54]">
                   Before we create a design, we listen. Because the good always
                   comes from understanding. We put ourselves in your users'
                   shoes so your product enters their lives smoothly.
@@ -619,7 +615,7 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">02</div>
               <div className="flex flex-col gap-3">
                 <div className="text-[1.5rem] font-bold">Clarity</div>
-                <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                <p className="md:text-[1rem] leading-[1.54]">
                   We don't design to sound smart. We design so your users feel
                   smart. Every word, flow, and screen is crafted to remove
                   friction, not add flash.
@@ -631,7 +627,7 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">03</div>
               <div className="flex flex-col gap-3">
                 <div className="text-[1.5rem] font-bold">Momentum</div>
-                <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                <p className="md:text-[1rem] leading-[1.54]">
                   Start small. Learn fast. Move with focus. We don't believe in
                   perfection. We believe in progress. That is why we ship, test,
                   and stay North Star aligned.
@@ -643,7 +639,7 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">04</div>
               <div className="flex flex-col gap-3">
                 <div className="text-[1.5rem] font-bold">Outcomes</div>
-                <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                <p className="md:text-[1rem] leading-[1.54]">
                   A good-looking app that doesn't convert is just decoration. We
                   obsess over real results — conversions, activations, and
                   retention.

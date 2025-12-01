@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 export default function Review() {
   const swiperRef = useRef(null);
   return (
-    <section className="bg-[#f0f0f0] overflow-hidden pt-10 md:pl-20 pl-6">
+    <section className="bg-[#f0f0f0] overflow-hidden  lg:pl-20 md:pl-10 pl-6">
       <div
-        className=" flex flex-col pt-[9.5rem] pb-[8.5rem] gap-[4rem]
+        className=" flex flex-col pt-15 lg:pt-[9.5rem] sm:pb-[7rem] lg:pb-[8.5rem] gap-[4rem]
        md:pt-16 md:pb-28 md:gap-8
       
     "
@@ -32,7 +32,7 @@ export default function Review() {
     text-[1.85rem] leading-[1.3] tracking-[1px]
     md:text-[1.85rem]
     lg:text-[2.5rem]
-   
+   2xl:text-[3.5rem]
    
   "
           >

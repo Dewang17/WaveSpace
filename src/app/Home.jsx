@@ -228,10 +228,10 @@ const page = () => {
           </div>
         </section>
 
-        <section className="flex justify-center bg-gray-50 items-center">
-          <div className="bg-gray-200 h-[750px] w-[1350px] flex justify-center items-center">
+        <section className="flex justify-center bg-gray-50 items-center px-5 md:px-10 lg:px-20">
+          <div className="flex justify-center items-center">
             <video
-              className="h-full w-full object-cover"
+              className="h-full w-full  object-cover"
               autoPlay
               loop
               muted
@@ -248,15 +248,15 @@ const page = () => {
         <Testimonial />
 
         <section className="px-10 py-12">
-          <h1 className="text-6xl font-semibold leading-tight max-w-8xl px-10">
+          <h1 className="text-3xl   md:text-4xl lg:text-5xl  xl:text-6xl  font-semibold leading-tight max-w-8xl lg:px-10">
             Turn your ideas into
-            <span className=" text-6xl text-gray-500 font-semibold">
+            <span className=" text-3xl   md:text-4xl lg:text-5xl  xl:text-6xl  text-gray-500 font-semibold">
               {" "}
               impactful <br /> solutions like them!
             </span>
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-3 mt-8 px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-3 mt-8 lg:px-8">
             {data.map((read, index) => (
               <div key={index} className="flex flex-col group cursor-pointer">
                 <div className="overflow-hidden ">
@@ -335,7 +335,7 @@ const page = () => {
             </div>
           </div>
           <div className="px-6 pt-24">
-            <h1 className="text-white text-5xl font-semibold leading-tight">
+            <h1 className="text-white  text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-semibold leading-tight">
               From startup to enterprise, grow your business <br />
               <span className="text-[#555555]">
                 with fast and creative designs!
@@ -344,8 +344,8 @@ const page = () => {
           </div>
         </section>
         <Sliderr />
-        <Achievements/>
-        <Review/>
+        <Achievements />
+        <Review />
         <PersonSlider />
         <section id="contact" className="py-20 bg-white">
           <FAQSection />
@@ -361,8 +361,8 @@ const page = () => {
               </h1>
 
               <button className="flex flex-row gap-3 justify-center items-center bg-blue-600 text-white px-6 py-3 rounded-full text-base md:text-lg w-fit hover:opacity-90 transition cursor-pointer">
-                Book a call 
-                 <MdOutlineArrowOutward className="text-[20px]"/>
+                Book a call
+                <MdOutlineArrowOutward className="text-[20px]" />
               </button>
             </div>
 

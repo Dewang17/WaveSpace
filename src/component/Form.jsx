@@ -16,7 +16,7 @@ export default function Form() {
   };
 
   return (
-    <section className="bg-[#F0F0F0] min-h-screen flex flex-col justify-center md:py-15 px-6 lg:px-16 xl:px-22">
+    <section className="bg-[#F0F0F0] min-h-screen flex flex-col justify-center md:py-35 px-6 lg:px-16 xl:px-22">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left Section */}
         <div>
@@ -34,8 +34,8 @@ export default function Form() {
               fast & focused.
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-black">☑</span> Work with senior UX
-              experts, not juniors.
+              <span className="text-black">☑</span> Work with senior UX experts,
+              not juniors.
             </li>
           </ul>
 
@@ -63,29 +63,27 @@ export default function Form() {
         </div>
 
         {/* Right Section (Form) */}
-        <div className="bg-white shadow-md rounded-xl p-8">
+        <div className="bg-[#fff] shadow-md  p-12 ">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:outline-none"
+                  className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
                 />
               </div>
               <div>
-               
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Full name"
-                  className="w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:outline-none"
+                  className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
                 />
               </div>
             </div>
@@ -95,7 +93,7 @@ export default function Form() {
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 text-gray-600 focus:border-gray-600 focus:outline-none"
+                className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
               >
                 <option>Project budget</option>
                 <option>$1,000 - $5,000</option>
@@ -107,7 +105,7 @@ export default function Form() {
                 name="hear"
                 value={formData.hear}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 text-gray-600 focus:border-gray-600 focus:outline-none"
+                className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
               >
                 <option>How did you hear about us?</option>
                 <option>Google</option>
@@ -117,14 +115,13 @@ export default function Form() {
             </div>
 
             <div>
-              
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us about your product and goals."
                 rows="3"
-                className="w-full border border-gray-300 rounded-md p-3 focus:border-gray-600 focus:outline-none"
+                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
               ></textarea>
             </div>
 

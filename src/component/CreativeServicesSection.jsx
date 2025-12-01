@@ -32,11 +32,11 @@ export default function CreativeServicesSection() {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <section className="relative bg-gray-100 py-[10.5rem] px-8 md:px-12 overflow-visible">
+    <section className="relative bg-gray-100 py-[10.5rem] px-5 md:px-12 overflow-visible">
       <div className="max-w-[1440px] mx-auto flex flex-col relative overflow-visible">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 gap-8">
-          <h2 className="text-[3.5rem] leading-[1.3em] font-semibold text-black max-w-[915px]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl  leading-[1.3em] font-semibold text-black max-w-[915px]">
             One subscription. all the{" "}
             <span className="text-gray-500">creative services you need</span>
           </h2>

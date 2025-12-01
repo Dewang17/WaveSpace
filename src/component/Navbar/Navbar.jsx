@@ -125,7 +125,7 @@ export default function Navbar() {
                   { name: "UX Research", icon: Search },
                   { name: "Build Product (MVP)", icon: Layers },
                 ].map((item, i) => (
-                  <Link
+                  <Link 
                     key={i}
                     href="#"
                     className="flex items-center gap-3 text-gray-700 hover:text-black"

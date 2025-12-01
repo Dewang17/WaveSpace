@@ -59,18 +59,18 @@ export default function ProcessSteps() {
 const x = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
 
   return (
-    <section ref={ref} className="bg-[#f0f0f0] pt-24 overflow-hidden pl-10">
+    <section ref={ref} className="bg-[#f0f0f0] pt-24 overflow-hidden pl-5 lg:pl-10">
       <div className="container mx-auto">
         {/* Heading */}
-        <div className="mb-20 pl-10">
-          <h2 className="text-4xl md:text-6xl font-bold leading-snug ">
-            The process behind our{" "} <br />
+        <div className="mb-20 md:pl-10 ">
+          <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl  font-bold leading-snug ">
+            The process behind our <br />
             <span className="text-[#29242469]">design of your product</span>
           </h2>
         </div>
 
         {/* Sticky Horizontal Scroll */}
-        <div className="relative h-[100vh]">
+        <div className="relative md:h-[80vh] lg:h-[80vh] pb-10">
           <div className="sticky top-10 flex items-center overflow-hidden ">
             <motion.div
               style={{ x }}
