@@ -219,7 +219,7 @@ export default function Navbar() {
             {[
               { label: "Case studies", href: "/case-studies" },
               { label: "Pricing", href: "/pricing" },
-              { label: "Services", href: "/services" },
+              { label: "Services", href: "/service" },
               { label: "Startups", href: "/startups" },
               { label: "About us", href: "/about" },
               { label: "Blog", href: "/blog" },

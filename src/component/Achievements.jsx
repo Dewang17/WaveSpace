@@ -56,7 +56,7 @@ export default function Achievements() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="flex justify-start whitespace-nowrap"
           >
-            <h1 className="text-white font-extrabold tracking-wide leading-[1] text-[5rem] md:text-[9rem] xl:text-[11rem] capitalize">
+            <h1 className="text-white font-extrabold tracking-wide leading-[1] text-[3rem] md:text-[6rem] lg:text-[9rem] xl:text-[11rem] ">
               our award &
             </h1>
           </motion.div>
@@ -68,7 +68,7 @@ export default function Achievements() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="flex justify-end whitespace-nowrap"
           >
-            <h1 className="text-white font-extrabold tracking-wide leading-[1] text-[5rem] md:text-[9rem] xl:text-[11rem] capitalize">
+            <h1 className="text-white font-extrabold tracking-wide leading-[1] text-[3rem]  md:text-[6rem] lg:text-[9rem] xl:text-[11rem] ">
               achievements
             </h1>
           </motion.div>
@@ -96,8 +96,6 @@ export default function Achievements() {
                   <span className="text-gray-400 text-lg font-medium">
                     {item.id}
                   </span>
-
-                 
                 </div>
 
                 <h3 className="text-2xl font-[525] leading-snug mt-16 text-black">

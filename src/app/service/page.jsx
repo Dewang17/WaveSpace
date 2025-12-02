@@ -100,7 +100,7 @@ export default function page() {
   return (
     <>
       <section className="bg-[#000054] text-[#ffffff] w-full  relative overflow-hidden h-full">
-        <div className="flex justify-between items-center mx-auto gap-22 flex-col md:flex-row px-16 ">
+        <div className="flex justify-between items-center mx-auto gap-22 flex-col md:flex-row px-5 md:px-10 lg:px-16 ">
           {/* LEFT CONTENT */}
           <div className="w-full md:w-1/2 leading-tight">
             <div className="inline-block  text-sm px-14 py-2 rounded-full mb-5 border border-white/20">
@@ -159,16 +159,16 @@ export default function page() {
         {/* <Slider2 /> */}
         <LogoSlider />
       </section>
-      <section className="w-full bg-white ">
+      <section className="w-full bg-white mx-auto">
         {/* First */}
-        <div className="max-w-8xl grid grid-cols-1 md:grid-cols-2 gap-22 px-7 pb-20 pt-10 mx-10">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-22   px-6 md:px-10 lg:px-14 pb-20 pt-10">
           {/* LEFT SIDE IMAGE & MOCKUP */}
-          <div className="flex justify-center items-center ">
-            <div className="relative">
+          <div className="flex  ">
+            <div className="relative ">
               <img
                 src="/images/mobile.webp"
                 alt="UI/UX Mobile Mockup"
-                className="w-[580px] "
+                className="lg:w-[600px] lg:h-[700px] sm:w-[400px] sm:h-[500px] "
               />
             </div>
           </div>
@@ -205,8 +205,8 @@ export default function page() {
           </div>
         </div>
         {/* Second */}
-        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-14 pb-20 pt-10">
-          {/* LEFT SIDE CONTENT */}   
+        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-6 md:px-10 lg:px-14 pb-20 pt-10">
+          {/* LEFT SIDE CONTENT */}
           <div className="flex flex-col justify-center">
             <h1 className="text-5xl font-bold mb-6">UI/UX Design</h1>
 
@@ -243,20 +243,20 @@ export default function page() {
               <img
                 src="/images/laptop.webp"
                 alt="UI/UX Mobile Mockup"
-                className="w-[580px] "
+                className="lg:w-[600px] lg:h-[700px] sm:w-[400px] sm:h-[500px]   "
               />
             </div>
           </div>
         </div>
         {/* Third */}
-        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-14 pb-20 pt-10">
+        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-6 md:px-10 lg:px-14 pb-20 pt-10">
           {/* LEFT SIDE IMAGE & MOCKUP */}
           <div className="flex justify-center items-center">
             <div className="relative">
               <img
                 src="/images/mobile2.webp"
                 alt="UI/UX Mobile Mockup"
-                className="w-[580px] "
+                className="lg:w-[600px] lg:h-[700px] sm:w-[400px] sm:h-[500px]   "
               />
             </div>
           </div>
@@ -293,7 +293,7 @@ export default function page() {
           </div>
         </div>
         {/* Fourth */}
-        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-14 pb-20 pt-10">
+        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-6 md:px-10 lg:px-14 pb-20 pt-10">
           {/* LEFT SIDE CONTENT */}
           <div className="flex flex-col justify-center">
             <h1 className="text-5xl font-bold mb-6">UI/UX Design</h1>
@@ -331,20 +331,20 @@ export default function page() {
               <img
                 src="/images/board.webp"
                 alt="UI/UX Mobile Mockup"
-                className="w-[580px] "
+                className="lg:w-[600px] lg:h-[700px] sm:w-[400px] sm:h-[500px]  "
               />
             </div>
           </div>
         </div>
         {/* Fifth */}
-        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-14 pb-20 pt-10">
+        <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-2 gap-22 px-6 md:px-10 lg:px-14 pb-20 pt-10">
           {/* LEFT SIDE IMAGE & MOCKUP */}
-          <div className="flex justify-center items-center">
+          <div className="flex ">
             <div className="relative">
               <img
                 src="/images/lap2.webp"
                 alt="UI/UX Mobile Mockup"
-                className="w-[580px] "
+                className="lg:w-[600px] lg:h-[700px] sm:w-[400px] sm:h-[500px]   "
               />
             </div>
           </div>
@@ -382,14 +382,14 @@ export default function page() {
         </div>
       </section>
       {/* Industry expertise */}
-      <section className="ind_sec py-[9.75rem] pb-[4.5rem]">
-        <div className="container is_ind mx-auto max-w-[1440px] px-10">
+      <section className="ind_sec py-[4rem] lg:py-[7rem] 2xl:py-[9.75rem] pb-[4.5rem]">
+        <div className="container is_ind mx-auto max-w-[1440px] px-6 md:px-10">
           {/* Top Section */}
           <div className="section_top-wrap grid grid-cols-[0.75fr_0.25fr] gap-4 items-end max-md:flex max-md:flex-col">
             {/* Heading */}
             <div className="heading_content-wrap">
               <div className="section_heaing-wrap flex justify-between items-end max-md:flex-col">
-                <h2 className="section-title text-[3.5rem] leading-[1.35] font-bold mb-0 max-md:text-[1.875rem]">
+                <h2 className="section-title text-3xl  md:text-4xl lg:text-5xl leading-[1.35] font-bold mb-0 max-md:text-[1.875rem]">
                   Industry expertise{" "}
                   <span className="text-hightlight text-[#29242469]">
                     across <br /> globally
@@ -399,7 +399,7 @@ export default function page() {
             </div>
 
             {/* Button */}
-            <button className="group bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-4 py-4 hover:bg-black transition-all flex flex-row justify-center items-center gap-2 cursor-pointer">
+            <button className="flex justify-between items-end group bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-4 py-4 hover:bg-black transition-all flex flex-row justify-center items-center gap-2 cursor-pointer">
               <span>Consult an expert</span>
 
               <span className="arrow-box relative w-[28px] h-[20px] inline-flex items-center justify-center overflow-hidden">
@@ -631,15 +631,15 @@ export default function page() {
           {/* TOP HEADING + BUTTON */}
           <div className="flex flex-col md:flex-row justify-between md:items-center mb-16">
             <div>
-              <h2 className="text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl md:text-[2.5rem] lg:text-5xl  font-bold text-gray-900 leading-tight">
                 Who we design for and how
               </h2>
-              <h2 className="text-5xl font-bold text-gray-400 leading-tight">
+              <h2 className="text-3xl md:text-[2.5rem] lg:text-5xl font-bold text-gray-400 leading-tight">
                 we support them
               </h2>
             </div>
 
-            <button className="group bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-8 py-4 hover:bg-black transition-all flex flex-row justify-center items-center gap-2 cursor-pointer">
+            <button className="group bg-[#3F2FEE] text-white text-[15px] font-bold rounded-full px-8 py-4 hover:bg-black transition-all flex flex-row justify-center items-center gap-2 cursor-pointer mt-10">
               <span>Start Your Project</span>
               <MdOutlineArrowOutward className="text-[20px] arrow-animate" />
             </button>
@@ -682,7 +682,7 @@ export default function page() {
       </section>
       {/* review */}
       <section>
-        <Review/>
+        <Review />
       </section>
       <section className="w-full py-20">
         <div className="max-w-8xl  px-6">

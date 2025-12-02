@@ -18,7 +18,7 @@ export default function Form() {
   };
 
   return (
-    <section className="bg-[#F0F0F0] min-h-screen flex flex-col justify-center md:py-35 px-6 lg:px-16 xl:px-22">
+    <section className="bg-[#F0F0F0] min-h-screen flex flex-col justify-center md:py-2 pb-20 px-6 lg:px-16 xl:px-22">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left Section */}
         <div>
@@ -63,7 +63,7 @@ export default function Form() {
         </div>
 
         {/* Right Section (Form) */}
-        <div className="bg-white shadow-md p-12">
+        <div className="bg-white shadow-md p-12 ">
           <form className="space-y-6">
             {/* Email & Name */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -26,7 +26,7 @@ export default function page() {
   ];
   return (
     <>
-      <section className="bg-black text-white py-24 px-4 mt-20">
+      <section className="bg-black text-white py-24 px-4 md:mt-20">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-sm mb-2 text-gray-300">Clutch ⭐⭐⭐⭐⭐ 5.0</p>
 
