@@ -58,7 +58,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScroll]);
 
-
   useEffect(() => {
     if (mobileMenu) {
       document.body.style.overflow = "hidden";
@@ -66,7 +65,6 @@ export default function Navbar() {
       document.body.style.overflow = "";
     }
   }, [mobileMenu]);
-
 
   return (
     <nav
@@ -219,20 +217,20 @@ export default function Navbar() {
           {/* Menu items */}
           <nav className="px-6 pt-10 space-y-8">
             {[
-              "Case studies",
-              "Pricing",
-              "Services",
-              "Startups",
-              "About us",
-              "Blog",
+              { label: "Case studies", href: "/case-studies" },
+              { label: "Pricing", href: "/pricing" },
+              { label: "Services", href: "/services" },
+              { label: "Startups", href: "/startups" },
+              { label: "About us", href: "/about" },
+              { label: "Blog", href: "/blog" },
             ].map((item) => (
               <Link
-                key={item}
-                href="/"
+                key={item.label}
+                href={item.href}
                 onClick={() => setMobileMenu(false)}
                 className="block text-[32px] leading-none font-semibold text-black"
               >
-                {item}
+                {item.label}
               </Link>
             ))}
           </nav>

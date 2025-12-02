@@ -434,7 +434,7 @@ const page = () => {
                   Business Inquiry
                 </h2>
                 <p className="mt-3 text-sm">Email</p>
-                <p className="flex items-center gap-2 text-black mt-1 text-sm">
+                <p className="flex items-center gap-2 text-black mt-1 text-xs md:text-sm">
                   <Mail size={16} /> hello@wavespace.agency
                 </p>
 
@@ -442,7 +442,7 @@ const page = () => {
                   Career
                 </h2>
                 <p className="mt-3 text-sm">Join Us</p>
-                <p className="flex items-center gap-2 text-black mt-1 text-sm">
+                <p className="flex items-center gap-2 text-black mt-1 text-xs md:text-sm">
                   <Mail size={16} /> career@wavespace.agency
                 </p>
               </div>
