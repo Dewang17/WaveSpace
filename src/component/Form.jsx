@@ -6,6 +6,8 @@ export default function Form() {
   const [formData, setFormData] = useState({
     email: "",
     name: "",
+    mobile: "",
+    service: "",
     budget: "",
     hear: "",
     message: "",
@@ -20,22 +22,20 @@ export default function Form() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         {/* Left Section */}
         <div>
-          <h2 className=" text-4xl md:text-6xl text-4xl font-bold text-gray-900 mb-4  md:leading-1.35 lg:leading-17 pb-8">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 md:leading-[1.35] pb-8">
             Have a Project?
-            <br /> Let's talk!
+            <br /> Let&apos;s talk!
           </h2>
 
-          <ul className="space-y-3 text-black font-semibold mb-10 pb-8  ">
+          <ul className="space-y-3 text-black font-semibold mb-10 pb-8">
             <li className="flex items-center gap-2">
-              <span className="text-black">☑</span> NDA? Absolutely just ask.
+              <span>☑</span> NDA? Absolutely just ask.
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-black">☑</span> We'll respond in 24 hours
-              fast & focused.
+              <span>☑</span> We&apos;ll respond in 24 hours fast & focused.
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-black">☑</span> Work with senior UX experts,
-              not juniors.
+              <span>☑</span> Work with senior UX experts, not juniors.
             </li>
           </ul>
 
@@ -43,7 +43,7 @@ export default function Form() {
             <h3 className="text-lg font-semibold mb-3">Schedule a call:</h3>
             <div className="flex items-center gap-4 bg-white shadow-md rounded-xl p-4 w-fit">
               <Image
-                src="/images/man1.webp" // Replace with your image path
+                src="/images/man1.webp"
                 alt="Shahid Miah"
                 width={60}
                 height={60}
@@ -63,31 +63,57 @@ export default function Form() {
         </div>
 
         {/* Right Section (Form) */}
-        <div className="bg-[#fff] shadow-md  p-12 ">
+        <div className="bg-white shadow-md p-12">
           <form className="space-y-6">
+            {/* Email & Name */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email"
-                  className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
-                />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Full name"
-                  className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
-                />
-              </div>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Full name"
+                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+              />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email"
+                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+              />
             </div>
 
+            {/* Mobile & Services (NEW) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="tel"
+                name="mobile"
+                value={formData.mobile}
+                onChange={handleChange}
+                placeholder="Mobile number"
+                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+              />
+
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
+              >
+                <option value="">Select service</option>
+                <option>UI/UX Design</option>
+                <option>Web Design</option>
+                <option>SaaS Design</option>
+                <option>Branding</option>
+                <option>Mobile App</option>
+                <option>Development</option>
+                <option>MVP Development</option>
+              </select>
+            </div>
+
+            {/* Budget & Hear */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <select
                 name="budget"
@@ -95,7 +121,7 @@ export default function Form() {
                 onChange={handleChange}
                 className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
               >
-                <option>Project budget</option>
+                <option value="">Project budget</option>
                 <option>$1,000 - $5,000</option>
                 <option>$5,000 - $10,000</option>
                 <option>$10,000+</option>
@@ -107,50 +133,24 @@ export default function Form() {
                 onChange={handleChange}
                 className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
               >
-                <option>How did you hear about us?</option>
+                <option value="">How did you hear about us?</option>
                 <option>Google</option>
                 <option>LinkedIn</option>
                 <option>Referral</option>
               </select>
             </div>
 
-            <div>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Tell us about your product and goals."
-                rows="3"
-                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
-              ></textarea>
-            </div>
+            {/* Message */}
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Tell us about your product and goals."
+              rows={3}
+              className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+            />
 
-            <div>
-              <h4 className="text-lg font-semibold mb-3">
-                How can we help you?
-              </h4>
-              <div className="flex flex-wrap gap-3">
-                {[
-                  "UI/UX Design",
-                  "SaaS Design",
-                  "Branding",
-                  "CRO",
-                  "Mobile app",
-                  "Development",
-                  "MVP Development",
-                  "Web Design",
-                ].map((tag) => (
-                  <button
-                    type="button"
-                    key={tag}
-                    className="border border-gray-300 rounded-md px-4 py-2 text-gray-700 cursor-pointer"
-                  >
-                    {tag}
-                  </button>
-                ))}
-              </div>
-            </div>
-
+            {/* Submit */}
             <button
               type="submit"
               className="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition"

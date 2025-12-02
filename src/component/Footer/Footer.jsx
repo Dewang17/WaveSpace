@@ -9,11 +9,11 @@ export default function Footer() {
       {/* TOP SECTION */}
       <div className="flex flex-col   lg:flex-row gap-16 md:gap-15  lg:gap-15 2xl:gap-20 max-w-full md:mx-auto 2xl:px-10">
         {/* Logo & Description */}
-        <div className="lg:w-1/3 md:w-2/3 ">
+        <div className="lg:w-1/4 md:w-2/3 ">
           <h2 className="2xl:text-3xl lg:text-2xl  font-bold text-white mb-4">
             wavespace
           </h2>
-          <p className="text-[#B9B9B9] leading-relaxed mb-8 md:text-xl lg:text-xl 2xl:text-2xl font-semibold ">
+          <p className="text-[#B9B9B9] leading-relaxed mb-8 md:text-xl lg:text-lg  font-semibold ">
             Wavespace is a global UI/UX design agency that boosts brand value
             with user-friendly, effective designs for web, mobile, and SaaS
             platforms.
