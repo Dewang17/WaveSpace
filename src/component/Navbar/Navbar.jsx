@@ -13,6 +13,7 @@ import {
   Zap,
   Menu,
   X,
+  ArrowUpRight,
 } from "lucide-react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { usePathname } from "next/navigation";
@@ -56,6 +57,16 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScroll]);
+
+
+  useEffect(() => {
+    if (mobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [mobileMenu]);
+
 
   return (
     <nav
@@ -125,7 +136,7 @@ export default function Navbar() {
                   { name: "UX Research", icon: Search },
                   { name: "Build Product (MVP)", icon: Layers },
                 ].map((item, i) => (
-                  <Link 
+                  <Link
                     key={i}
                     href="#"
                     className="flex items-center gap-3 text-gray-700 hover:text-black"
@@ -189,45 +200,56 @@ export default function Navbar() {
 
       {/* MOBILE MENU SLIDE-IN */}
       {mobileMenu && (
-        <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm md:hidden animate-fadeIn"
-          onClick={() => setMobileMenu(false)}
-        >
-          <div
-            className="absolute right-0 top-0 h-full w-72 bg-[#000054] text-white p-6 shadow-2xl animate-slideIn"
-            onClick={(e) => e.stopPropagation()}
-          >
+        <div className="fixed bg-white md:hidden w-full h-screen">
+          {/* Top bar */}
+          <div className="flex items-center justify-between px-6 py-5 border-b">
+            {/* <span className="text-xl font-bold tracking-tight lowercase">
+              wavespace
+            </span> */}
+
             <button
-              className="text-2xl mb-6"
               onClick={() => setMobileMenu(false)}
+              className="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium"
             >
-              <X size={28} />
+              <X size={16} />
+              Close
             </button>
+          </div>
 
-            <div className="space-y-6 text-lg font-medium">
-              <Link href="/service" className="block">
-                Services
-              </Link>
-              <Link href="/case-studies" className="block">
-                Case Studies
-              </Link>
-              <Link href="/pricing" className="block">
-                Pricing
-              </Link>
-              <Link href="/about" className="block">
-                About Us
-              </Link>
-              <Link href="/blog" className="block">
-                Blog
-              </Link>
-
+          {/* Menu items */}
+          <nav className="px-6 pt-10 space-y-8">
+            {[
+              "Case studies",
+              "Pricing",
+              "Services",
+              "Startups",
+              "About us",
+              "Blog",
+            ].map((item) => (
               <Link
-                href="/contact"
-                className="block mt-6 bg-white text-black text-center py-3 rounded-full font-semibold"
+                key={item}
+                href="/"
+                onClick={() => setMobileMenu(false)}
+                className="block text-[32px] leading-none font-semibold text-black"
               >
-                Contact Us
+                {item}
               </Link>
-            </div>
+            ))}
+          </nav>
+
+          {/* Bottom CTA */}
+          <div className="fixed px-2 mt-10 h-full">
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenu(false)}
+              className="flex items-center gap-4 justify-between rounded-full bg-[#4338CA] px-8 py-3 text-white text-xl font-semibold shadow-xl "
+            >
+              <span>Contact US</span>
+
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white ">
+                <ArrowUpRight size={22} className="text-[#4338CA]" />
+              </span>
+            </Link>
           </div>
         </div>
       )}
