@@ -7,7 +7,7 @@ const PersonSlider = () => {
     <>
       <div className="py-22">
         {/* Text + Button Row */}
-        <div className="flex flex-col xl:flex-row items-start xl:items-start gap-6 justify-between px-10 pb-14">
+        <div className="flex flex-col xl:flex-row items-start xl:items-start gap-6 justify-between px-5 md:px-10 pb-14">
           <h1 className="text-3xl md:text-3xl lg:text-5xl font-semibold leading-[1.4] max-w-6xl">
             From Bangladesh to USA, we turn <br />
             your{" "}

@@ -63,7 +63,7 @@ export default function Page() {
 
   return (
     <div>
-      <section className="w-full flex items-center justify-between px-10 lg:px-28 py-30">
+      <section className="w-full flex items-center justify-between px-10 lg:px-28 py-30 lg:py-40">
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-[1000] leading-tight tracking-tight">
             Designed for billions, and we are the team behind{" "}
@@ -77,8 +77,19 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <section className="flex justify-center items-center">
-        <div className="bg-gray-200 w-full h-[80vh]"></div>
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="relative overflow-hidden rounded-2xl">
+            <Image
+              src="/images/team.webp" // replace with your image
+              alt="Team collaboration"
+              width={500}
+              height={200}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
+        </div>
       </section>
 
       <section>

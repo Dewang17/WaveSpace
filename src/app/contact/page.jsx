@@ -3,21 +3,22 @@ import LogoSlider from "@/component/LogoSlider";
 import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const page = () => {
   return (
     <>
       <div>
-        <section>
+        <section className="pt-30">
           <Form />
           <LogoSlider />
         </section>
         <section className="py-8">
           {/* BELIEFS SECTION */}
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-10 px-12">
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-10 px-5 lg:px-12">
             {/* LEFT SIDE TITLE */}
             <div className="w-full lg:w-1/2">
-              <h2 className="text-[3.5rem] md:text-[2.7rem] sm:text-[2rem] font-bold leading-[1.35]">
+              <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35]">
                 The beliefs{" "}
                 <span className="text-[#29242469]">
                   behind <br /> the builds
@@ -33,7 +34,7 @@ const page = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                   <div className="text-[1.5rem] font-bold">Empathy</div>
-                  <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                  <p className=" md:text-[1rem] leading-[1.54]">
                     Before we create a design, we listen. Because the good
                     always comes from understanding. We put ourselves in your
                     users' shoes so your product enters their lives smoothly.
@@ -47,7 +48,7 @@ const page = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                   <div className="text-[1.5rem] font-bold">Clarity</div>
-                  <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                  <p className="md:text-[1rem] leading-[1.54]">
                     We don't design to sound smart. We design so your users feel
                     smart. Every word, flow, and screen is crafted to remove
                     friction, not add flash.
@@ -61,7 +62,7 @@ const page = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                   <div className="text-[1.5rem] font-bold">Momentum</div>
-                  <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                  <p className="md:text-[1rem] leading-[1.54]">
                     Start small. Learn fast. Move with focus. We don't believe
                     in perfection. We believe in progress. That is why we ship,
                     test, and stay North Star aligned.
@@ -75,7 +76,7 @@ const page = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                   <div className="text-[1.5rem] font-bold">Outcomes</div>
-                  <p className="text-[1.375rem] md:text-[1rem] leading-[1.54]">
+                  <p className="md:text-[1rem] leading-[1.54]">
                     A good-looking app that doesn't convert is just decoration.
                     We obsess over real results — conversions, activations, and
                     retention.
@@ -85,9 +86,9 @@ const page = () => {
             </div>
           </div>
         </section>
-        <section className="bg-black w-full py-20 px-10">
+        <section className="bg-black w-full py-20 lg:px-10 md:px-4">
           <div className=" px-6">
-            <h1 className="text-white text-5xl font-semibold leading-tight">
+            <h1 className="text-white text-3xl md:text-5xl font-semibold leading-tight">
               We deliver on time, in days and weeks <br />
               <span className="text-[#555555]">— not months.</span>
             </h1>
@@ -140,8 +141,8 @@ const page = () => {
               </button>
             </div>
           </div>
-          <div className="px-6 pt-14">
-            <h1 className="text-white text-5xl font-semibold leading-tight">
+          <div className="px-6 pt-24">
+            <h1 className="text-white  text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-semibold leading-tight">
               From startup to enterprise, grow your business <br />
               <span className="text-[#555555]">
                 with fast and creative designs!
@@ -149,31 +150,57 @@ const page = () => {
             </h1>
           </div>
         </section>
+        <section className="w-full bg-white pt-20">
+          {/* Heading */}
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold leading-tight text-black">
+              Our Headquarters centrally based in
+              <span className="block text-gray-400">
+                Bangladesh & Indonesia
+              </span>
+            </h2>
+          </div>
+
+          {/* Full-width image */}
+          <div className="w-full mt-16">
+            <Image
+              src="/images/map.webp" // replace with your image
+              alt="World map dotted illustration"
+              width={2400}
+              height={800}
+              className="w-full h-auto"
+              priority
+            />
+          </div>
+        </section>
         <section className="w-full py-14 bg-white">
-          <div className="max-w-8xl mx-auto px-18">
-            <div className="flex justify-between items-start">
-              <h1 className="text-5xl md:text-7xl font-semibold leading-tight text-[#1B1B1B]">
+          <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-10 lg:px-18">
+            {/* HEADER */}
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight text-[#1B1B1B]">
                 Got a project in mind?
-                <br /> Let's talk.
+                <br /> Let&apos;s talk.
               </h1>
 
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg hover:opacity-90 transition">
-                Book a call →
+              <button className="flex flex-row gap-3 justify-center items-center bg-blue-600 text-white px-6 py-3 rounded-full text-base md:text-lg w-fit hover:opacity-90 transition cursor-pointer">
+                Book a call
+                <MdOutlineArrowOutward className="text-[20px]" />
               </button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mt-20">
+            {/* LOCATIONS */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
               {/* Bangladesh */}
               <div>
-                <h2 className="text-xl font-semibold text-1B1B1B">
+                <h2 className="text-lg md:text-xl font-semibold text-[#1B1B1B]">
                   Bangladesh
                 </h2>
-                <div className="mt-4 space-y-1 text-black">
+                <div className="mt-4 space-y-2 text-blacks text-xs md:text-sm">
                   <span className="flex items-center gap-2">
-                    <Mail size={18} /> hello@wavespace.agency
+                    <Mail size={16} /> hello@wavespace.agency
                   </span>
                   <span className="flex items-center gap-2">
-                    <Phone size={18} /> +880 1785 0871 48
+                    <Phone size={16} /> +880 1785 0871 48
                   </span>
                 </div>
                 <p className="mt-4 text-sm text-black/80 leading-relaxed">
@@ -187,13 +214,13 @@ const page = () => {
 
               {/* Indonesia */}
               <div>
-                <h2 className="text-xl font-semibold">Indonesia</h2>
-                <div className="mt-4 space-y-1 text-black">
+                <h2 className="text-lg md:text-xl font-semibold">Indonesia</h2>
+                <div className="mt-4 space-y-2 text-black text-xs md:text-sm">
                   <span className="flex items-center gap-2">
-                    <Mail size={18} /> hello@wavespace.agency
+                    <Mail size={16} /> hello@wavespace.agency
                   </span>
                   <span className="flex items-center gap-2">
-                    <Phone size={18} /> +62 8211 6925 169
+                    <Phone size={16} /> +62 8211 6925 169
                   </span>
                 </div>
                 <p className="mt-4 text-sm text-black/80 leading-relaxed">
@@ -206,14 +233,14 @@ const page = () => {
               </div>
 
               {/* USA */}
-              <div className="border-r border-gray-300 pr-10">
-                <h2 className="text-xl font-semibold">USA</h2>
-                <div className="mt-4 space-y-1 text-black">
+              <div className="lg:border-r lg:border-gray-300 lg:pr-10">
+                <h2 className="text-lg md:text-xl font-semibold">USA</h2>
+                <div className="mt-4 space-y-2 text-black text-xs md:text-sm">
                   <span className="flex items-center gap-2">
-                    <Mail size={18} /> hello@wavespace.agency
+                    <Mail size={16} /> hello@wavespace.agency
                   </span>
                   <span className="flex items-center gap-2">
-                    <Phone size={18} /> +1 470 504 3155
+                    <Phone size={16} /> +1 470 504 3155
                   </span>
                 </div>
                 <p className="mt-4 text-sm text-black/80 leading-relaxed">
@@ -225,16 +252,20 @@ const page = () => {
 
               {/* Business + Career */}
               <div>
-                <h2 className="text-xl font-semibold">Business Inquiry</h2>
+                <h2 className="text-lg md:text-xl font-semibold">
+                  Business Inquiry
+                </h2>
                 <p className="mt-3 text-sm">Email</p>
-                <p className="flex items-center gap-2 text-black mt-1">
-                  <Mail size={18} /> hello@wavespace.agency
+                <p className="flex items-center gap-2 text-black mt-1 text-xs md:text-sm">
+                  <Mail size={16} /> hello@wavespace.agency
                 </p>
 
-                <h2 className="text-xl font-semibold mt-10">Career</h2>
+                <h2 className="text-lg md:text-xl font-semibold mt-8">
+                  Career
+                </h2>
                 <p className="mt-3 text-sm">Join Us</p>
-                <p className="flex items-center gap-2 text-black mt-1">
-                  <Mail size={18} /> career@wavespace.agency
+                <p className="flex items-center gap-2 text-black mt-1 text-xs md:text-sm">
+                  <Mail size={16} /> career@wavespace.agency
                 </p>
               </div>
             </div>

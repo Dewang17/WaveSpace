@@ -65,16 +65,18 @@ export default function OurMembership() {
               flex flex-col md:flex-row lg:flex-row items-center justify-between
               rounded-3xl p-[2.5rem_2rem] lg:gap-[2rem] h-full"
             >
-              <div className="lg:w-1/2 md:w-1/2 w-full">
-                <h3 className="text-[1.375rem] font-semibold mb-4">
-                  Fast turnaround
-                </h3>
-              </div>
-              <div>
-                <p className="text-[0.9375rem] leading-[1.375rem] font-medium">
-                  Our team creates stunning designs tailored to your needs,
-                  ready in just a few days.
-                </p>
+              <div className="flex flex-col">
+                <div className="lg:w-1/2 md:w-1/2 w-full">
+                  <h3 className="text-[1.375rem] font-semibold mb-4">
+                    Fast turnaround
+                  </h3>
+                </div>
+                <div>
+                  <p className="text-[0.9375rem] leading-[1.375rem] font-medium">
+                    Our team creates stunning designs tailored to your needs,
+                    ready in just a few days.
+                  </p>
+                </div>
               </div>
 
               <div className="relative w-full md:w-1/2 lg:w-1/2 h-[250px] mt-6 md:mt-0 overflow-hidden rounded-2xl">
@@ -133,16 +135,18 @@ export default function OurMembership() {
               flex flex-col md:flex-row lg:flex-row items-center justify-between
               rounded-3xl p-[2.5rem_2rem] lg:gap-[2rem]"
             >
-              <div className="md:w-1/2 lg:w-1/2">
-                <h3 className="text-[1.375rem] font-semibold mb-4">
-                  Full design service
-                </h3>
-              </div>
-              <div>
-                <p className="text-[1 rem] leading-[1.375rem]">
-                  We offer full-service design, covering every aspect to meet
-                  all your needs.
-                </p>
+              <div className="flex flex-col">
+                <div className="md:w-1/2 lg:w-1/2">
+                  <h3 className="text-[1.375rem] font-semibold mb-4">
+                    Full design service
+                  </h3>
+                </div>
+                <div>
+                  <p className="text-[1 rem] leading-[1.375rem]">
+                    We offer full-service design, covering every aspect to meet
+                    all your needs.
+                  </p>
+                </div>
               </div>
 
               <div className="relative w-full md:w-1/2 lg:w-1/2 h-[220px] mt-6 md:mt-0 overflow-hidden rounded-2xl">
@@ -165,19 +169,21 @@ export default function OurMembership() {
               flex flex-col md:flex-row lg:flex-row items-center justify-between
               rounded-3xl p-[2.5rem_2rem] lg:gap-[2rem]"
             >
-              <div className="lg:w-1/2 md:w-1/2">
-                <h3 className="text-[1.375rem] font-semibold mb-4">
-                  No contracts, no headaches
-                </h3>
-              </div>
-              <div>
-                <p className="text-[1rem] leading-[1.375rem] font-medium">
-                  Top-notch designs without any tricky rules or paperwork. It
-                  simple and straightforward.
-                </p>
+              <div className="flex flex-col">
+                <div className="lg:w-1/2 md:w-1/2">
+                  <h3 className="text-[1.375rem] font-semibold mb-4">
+                    No contracts, no headaches
+                  </h3>
+                </div>
+                <div>
+                  <p className="text-[1rem] leading-[1.375rem] font-medium">
+                    Top-notch designs without any tricky rules or paperwork. It
+                    simple and straightforward.
+                  </p>
+                </div>
               </div>
 
-              <div className="relative  md:w-2/3 mx-auto lg:w-1/2 h-[220px] mt-6 md:mt-0 overflow-hidden rounded-2xl">
+              <div className="relative w-full md:w-1/2 lg:w-1/2 h-[220px] mt-6 md:mt-0 overflow-hidden rounded-2xl">
                 <video
                   src="/videos/No_contract.mp4"
                   autoPlay

@@ -39,7 +39,7 @@ export default function Founders() {
         </h2>
 
         <div className="w-full flex flex-col items-center justify-center mt-10 2xl:px-20">
-          <div className="flex flex-col md:flex-row md:flex-nowrap items-center justify-between gap-10 md:gap-16 w-full overflow-hidden">
+          <div className="flex flex-col md:flex-row md:flex-nowrap items-center justify-between gap-10 md:gap-16 w-full overflow-hidden lg:pb-5">
             {/* CARD 1 */}  
             <div className="flex flex-col max-w-sm w-full items-center md:items-start">
               <div className="relative w-full max-w-[380px] md:w-[320px] lg:w-[400px] h-[350px] md:h-[450px]">
@@ -62,7 +62,7 @@ export default function Founders() {
             </div>
 
             {/* CARD 2 */}
-            <div className="flex flex-col max-w-sm w-full items-center md:items-start transform md:translate-y-12">
+            <div className="flex flex-col max-w-sm w-full items-center md:items-start transform md:translate-y-12 lg:pb-5">
               <div className="relative w-full max-w-[380px] md:w-[320px] lg:w-[400px] h-[420px] md:h-[550px]">
                 <Image
                   src="/images/man2.webp"

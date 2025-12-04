@@ -373,7 +373,7 @@ const page = () => {
                 <h2 className="text-lg md:text-xl font-semibold text-[#1B1B1B]">
                   Bangladesh
                 </h2>
-                <div className="mt-4 space-y-2 text-black text-sm">
+                <div className="mt-4 space-y-2 text-blacks text-xs md:text-sm">
                   <span className="flex items-center gap-2">
                     <Mail size={16} /> hello@wavespace.agency
                   </span>
@@ -393,7 +393,7 @@ const page = () => {
               {/* Indonesia */}
               <div>
                 <h2 className="text-lg md:text-xl font-semibold">Indonesia</h2>
-                <div className="mt-4 space-y-2 text-black text-sm">
+                <div className="mt-4 space-y-2 text-black text-xs md:text-sm">
                   <span className="flex items-center gap-2">
                     <Mail size={16} /> hello@wavespace.agency
                   </span>
@@ -413,7 +413,7 @@ const page = () => {
               {/* USA */}
               <div className="lg:border-r lg:border-gray-300 lg:pr-10">
                 <h2 className="text-lg md:text-xl font-semibold">USA</h2>
-                <div className="mt-4 space-y-2 text-black text-sm">
+                <div className="mt-4 space-y-2 text-black text-xs md:text-sm">
                   <span className="flex items-center gap-2">
                     <Mail size={16} /> hello@wavespace.agency
                   </span>
