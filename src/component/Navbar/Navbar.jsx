@@ -1,22 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import {
-  Monitor,
-  Smartphone,
-  Layout,
-  Layers,
-  Grid,
-  PenTool,
-  Box,
-  Search,
-  Zap,
-  Menu,
-  X,
-  ArrowUpRight,
-} from "lucide-react";
+import { servicesList } from "@/app/data/ServicesList";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { Menu } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -98,7 +87,8 @@ export default function Navbar() {
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
           >
-            <button
+            <Link
+              href="/service"
               className={`
               cursor-pointer relative flex items-center gap-2 ${textColor}
               after:content-[''] after:absolute after:left-0 after:bottom-0
@@ -108,55 +98,67 @@ export default function Navbar() {
             >
               <span>Services</span>
               <MdOutlineArrowOutward className="text-[16px]" />
-            </button>
+            </Link>
 
             {/* MEGA MENU */}
             <div
-              className={`absolute left-0 top-full mt-4 w-[950px] bg-white shadow-2xl border border-gray-100 rounded-3xl p-8 flex gap-8 transition-all duration-200
+              className={`absolute left-[-200] top-full mt-4 w-[1050px] bg-white shadow-2xl border border-gray-100 rounded-3xl p-8 flex gap-8 transition-all duration-200
               ${
                 open
                   ? "opacity-100 visible translate-y-0"
                   : "opacity-0 invisible -translate-y-2"
               }`}
             >
-              <div className="grid grid-cols-2 gap-x-12 gap-y-4 flex-1">
-                {[
-                  { name: "UI UX Design", icon: Layout },
-                  { name: "Web Design", icon: Monitor },
-                  { name: "Product Design", icon: Box },
-                  { name: "SaaS Design", icon: Layers },
-                  { name: "Branding", icon: PenTool },
-                  { name: "Landing Page Design", icon: Grid },
-                  { name: "UX Audit", icon: Search },
-                  { name: "Mobile App", icon: Smartphone },
-                  { name: "Design System", icon: Zap },
-                  { name: "Webflow", icon: Layout },
-                  { name: "UX Research", icon: Search },
-                  { name: "Build Product (MVP)", icon: Layers },
-                ].map((item, i) => (
+              <div className="grid grid-cols-2 gap-x-12 gap-y-6 flex-1">
+                {servicesList.map((item, i) => (
                   <Link
                     key={i}
-                    href="#"
-                    className="flex items-center gap-3 text-gray-700 hover:text-black"
+                    href={`/service/${item.slug}`}
+                    className="group flex items-center gap-3 text-black font-medium"
                   >
                     <span className="bg-indigo-600 text-white p-2 rounded-full">
                       <item.icon size={18} />
                     </span>
-                    {item.name}
+
+                    <span
+                      className="relative inline-block
+        after:content-[''] after:absolute after:left-0 after:-bottom-1
+        after:w-0 after:h-[2px] after:bg-black
+        after:transition-all after:duration-300
+        group-hover:after:w-full"
+                    >
+                      {item.name}
+                    </span>
                   </Link>
                 ))}
               </div>
 
-              <div className="w-[250px] bg-gradient-to-br from-indigo-500 to-indigo-300 text-white p-6 rounded-2xl">
-                <h3 className="text-lg font-semibold">Subscription Services</h3>
-                <p className="text-sm mt-2">
-                  One subscription, unlimited design requests.
-                </p>
+              <div className="flex flex-col justify-between ">
+                <div className=" relative w-[250px] p-6 rounded-2xl bg-gradient-to-b from-[#a086fb]  to-white text-black h-full">
+                  {/* Logo */}
+                  <div className="relative w-[140px] h-[30px] mb-4 ml-[-50px]">
+                    <Image
+                      src="/images/logo.svg"
+                      alt="WaveSpace Logo"
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+
+                  <h3 className="text-lg font-semibold">
+                    Subscription Services
+                  </h3>
+                  <p className="text-sm mt-2 text-gray-700">
+                    One subscription, unlimited design requests.
+                  </p>
+                </div>
+
                 <Link
                   href="/contact"
-                  className="mt-4 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white after:transition-all hover:after:w-full"
+                  className="hidden lg:flex bg-black text-white font-bold rounded-full px-7 py-4 gap-2 w-40 mx-auto text-sm"
                 >
-                  Contact Us ↗
+                  Subscription
                 </Link>
               </div>
             </div>
@@ -220,7 +222,7 @@ export default function Navbar() {
               { label: "Case studies", href: "/case-studies" },
               { label: "Pricing", href: "/pricing" },
               { label: "Services", href: "/service" },
-              { label: "Startups", href: "/" },
+              { label: "Startups", href: "/startup" },
               { label: "About us", href: "/about" },
               { label: "Blog", href: "/blog" },
             ].map((item) => (

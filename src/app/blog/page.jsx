@@ -247,7 +247,7 @@
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20 pt-6">
             {blogs.map((blog, index) => (
               <div key={index} className="flex flex-col">
-                <Link href='/' className="block">
+                <Link href='/blogpage' className="block">
                   <div className="w-full mb-6 overflow-hidden rounded-lg">
                     <Image
                       src={blog.image}
