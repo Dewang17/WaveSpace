@@ -11,7 +11,7 @@ export const serviceExtras = {
       subtitle:
         "We care about what your users require and what your product requires to be, hence, you launch with confidence and grow with purpose.",
 
-      image: "/images/mobile.webp",
+      image: "/images/services/mobile.webp",
 
       list: [
         {
@@ -48,7 +48,7 @@ export const serviceExtras = {
       subtitle:
         "You’re not buying a design team — you’re investing in clarity, speed, and product confidence.",
 
-      image: "/images/mobile.webp",
+      image: "/images/services/mobile.webp",
 
       list: [
         {
@@ -237,7 +237,7 @@ export const serviceExtras = {
       },
       description:
         "Because simple, thoughtful design can make your product work better, faster, and feel easier, right from the start. We ensure that your SaaS product is smoother, more usable, and intuitive for every user who interacts with it.",
-      image: "/images/saas/img1.webp",
+      image: "/images/services/saas/img1.webp",
 
       list: [
         {
@@ -274,7 +274,7 @@ export const serviceExtras = {
       },
       description:
         "Great SaaS design stays invisible when it works. It helps users understand value quickly, keeps them engaged, and supports growth without friction.",
-      image: "/images/saas/img2.webp",
+      image: "/images/services/saas/img2.webp",
 
       list: [
         {
@@ -300,7 +300,7 @@ export const serviceExtras = {
       ],
     },
   },
-  branding: {
+  "branding": {
     philosophy: {
       title: {
         dark: "What Turns a Brand",
@@ -308,7 +308,7 @@ export const serviceExtras = {
       },
       description:
         "Your brand isn’t just how it looks, it’s how it makes people feel, connect, and remember you. A great brand speaks clearly, feels human, and grows with your business. Here’s what truly makes the difference.",
-      image: "/images/branding/img1.webp",
+      image: "/images/services/branding/img1.webp",
 
       list: [
         {
@@ -341,7 +341,7 @@ export const serviceExtras = {
       },
       description:
         "You’ve created something real. Now it deserves a brand people recognize, trust, and believe in. We turn early-stage products into confident brands that feel clear, credible, and authentic.",
-      image: "/images/branding/img2.webp",
+      image: "/images/services/branding/img2.webp",
 
       list: [
         {
@@ -379,7 +379,7 @@ export const serviceExtras = {
       },
       description:
         "Too many landing pages are built to impress visually but fail to deliver results. They drain budgets, miss conversion opportunities, and slow growth. Here’s where most go wrong — and how we fix it.",
-      image: "/images/landing-page/img1.webp",
+      image: "/images/services/landing-page/img1.webp",
 
       list: [
         {
@@ -412,7 +412,7 @@ export const serviceExtras = {
       },
       description:
         "People don’t buy from the best product — they buy from the best experience. Your landing page is that experience. We blend clarity, psychology, and visual flow so every visitor knows where to click and why it matters.",
-      image: "/images/landing-page/img2.webp",
+      image: "/images/services/landing-page/img2.webp",
 
       list: [
         {
@@ -442,7 +442,7 @@ export const serviceExtras = {
       },
       description:
         "We focus on what your users truly need and what your product must achieve. By balancing both, we help you launch with confidence and grow with clear purpose.",
-      image: "/images/ui-ux-consultancy/img1.webp",
+      image: "/images/services/ui-ux-consultancy/img1.webp",
 
       list: [
         {
@@ -475,7 +475,7 @@ export const serviceExtras = {
       },
       description:
         "You’re not just hiring a design team. You’re investing in clarity, speed, and confidence. Here’s how our approach makes the difference.",
-      image: "/images/ui-ux-consultancy/img2.webp",
+      image: "/images/services/ui-ux-consultancy/img2.webp",
 
       list: [
         {
@@ -509,7 +509,7 @@ export const serviceExtras = {
       },
       description:
         "Most UX audits point out problems without showing what to do next. At Wavespace, you don’t just get a report — you get clarity, direction, and practical next steps your team can act on immediately.",
-      image: "/images/audit/img1.webp",
+      image: "/images/services/audit/img1.webp",
 
       list: [
         {
@@ -542,7 +542,7 @@ export const serviceExtras = {
       },
       description:
         "Even great products lose users due to small UX issues. A UX audit gives you clarity on what’s slowing growth and a focused plan to improve what already exists.",
-      image: "/images/audit/img2.webp",
+      image: "/images/services/audit/img2.webp",
 
       list: [
         {
@@ -576,7 +576,7 @@ export const serviceExtras = {
       },
       description:
         "How your app works is an equally important part of the design as how it looks. Every time someone uses the app, every interaction with the screen can shape their actions. For this reason, we focus on simplicity, ease of use, and conversions to improve key product metrics.",
-      image: "/images/mobile-app/img1.webp",
+      image: "/images/services/mobile-app/img1.webp",
 
       list: [
         {
@@ -609,7 +609,7 @@ export const serviceExtras = {
       },
       description:
         "There is more to design than combining colors and elements. Our goal is to help users reach their goals more easily, faster, and with confidence. Every interaction is designed to feel purposeful and natural.",
-      image: "/images/mobile-app/img2.webp",
+      image: "/images/services/mobile-app/img2.webp",
 
       list: [
         {
@@ -643,7 +643,7 @@ export const serviceExtras = {
       },
       description:
         "Without a design system, creating new features or pages often leads to wasted time, inconsistent UI, and higher costs. A good system standardizes components and rules, helping your team work efficiently and scale confidently.",
-      image: "/images/design-system/img1.webp",
+      image: "/images/services/design-system/img1.webp",
 
       list: [
         {
@@ -676,7 +676,7 @@ export const serviceExtras = {
       },
       description:
         "Trust is earned through every interaction. A solid design system ensures your brand presents itself consistently, clearly, and reliably across all products and platforms.",
-      image: "/images/design-system/img2.webp",
+      image: "/images/services/design-system/img2.webp",
 
       list: [
         {
@@ -702,7 +702,7 @@ export const serviceExtras = {
       ],
     },
   },
-  webflow: {
+  "webflow": {
     philosophy: {
       title: {
         dark: "Why teams choose Wavespace",
@@ -710,7 +710,7 @@ export const serviceExtras = {
       },
       description:
         "You're moving fast, but your website isn't keeping up. Templates feel limiting, developers move too slowly, and your brand can get lost. We combine smart UX thinking with fast Webflow execution built for your goals.",
-      image: "/images/webflow/img1.webp",
+      image: "/images/services/webflow/img1.webp",
 
       list: [
         {
@@ -743,7 +743,7 @@ export const serviceExtras = {
       },
       description:
         "A poorly designed site can block growth, slow conversions, and frustrate users. With Webflow, you get a flexible, scalable, and conversion-ready website that drives action, builds trust, and supports your team from day one.",
-      image: "/images/webflow/img2.webp",
+      image: "/images/services/webflow/img2.webp",
 
       list: [
         {
@@ -777,7 +777,7 @@ export const serviceExtras = {
       },
       description:
         "Every successful product starts with understanding people, not assumptions. Our UX research process uncovers what your users think, feel, and need, enabling you to make informed design and business decisions. As one of the leading providers of user experience strategy, we transform research into a roadmap for growth, retention, and measurable success.",
-      image: "/images/ux-research/img1.webp",
+      image: "/images/services/ux-research/img1.webp",
 
       list: [
         {
@@ -810,7 +810,7 @@ export const serviceExtras = {
       },
       description:
         "Partnering with the right UX research team means choosing clarity, insight, and confidence. Wavespace helps you understand your users deeply, reduce risks, eliminate assumptions, and guide your product to success with research-backed insights.",
-      image: "/images/ux-research/img2.webp",
+      image: "/images/services/ux-research/img2.webp",
 
       list: [
         {
@@ -844,7 +844,7 @@ export const serviceExtras = {
       },
       description:
         "You have one shot to get attention. A smart MVP isn’t just about building fast, it’s about building the right version to test, learn, and grow with clarity. We reduce risk and increase confidence from day one.",
-      image: "/images/mvp/img1.webp",
+      image: "/images/services/mvp/img1.webp",
 
       list: [
         {
@@ -877,7 +877,7 @@ export const serviceExtras = {
       },
       description:
         "Many startups spend months building products no one wants. A smart MVP helps you start small, gain insights quickly, and avoid unnecessary revisions, letting you move fast and with clarity.",
-      image: "/images/mvp/img2.webp",
+      image: "/images/services/mvp/img2.webp",
 
       list: [
         {
@@ -911,7 +911,7 @@ export const serviceExtras = {
       },
       description:
         "Sometimes it’s unclear why users leave a website. Small confusion, slow interactions, or lack of connection can make them bounce. We identify these unnoticed moments and fix them to keep users engaged.",
-      image: "/images/cro/img1.webp",
+      image: "/images/services/cro/img1.webp",
 
       list: [
         {
@@ -944,7 +944,7 @@ export const serviceExtras = {
       },
       description:
         "Clicks are just the start. Conversion happens when clarity, trust, and intent guide users. Our CRO approach focuses on the moments that matter most to drive measurable results.",
-      image: "/images/cro/img2.webp",
+      image: "/images/services/cro/img2.webp",
 
       list: [
         {

@@ -70,8 +70,8 @@ const x = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
         </div>
 
         {/* Sticky Horizontal Scroll */}
-        <div className="relative md:h-[80vh] lg:h-[80vh] pb-10">
-          <div className="sticky top-10 flex items-center overflow-hidden ">
+        <div className="relative md:h-[80vh] lg:h-[80vh] pb-10 lg:pl-8">
+          <div className="sticky top-10 flex items-center  ">
             <motion.div
               style={{ x }}
               className="flex gap-6 md:gap-10 will-change-transform"

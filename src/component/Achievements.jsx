@@ -46,9 +46,9 @@ export default function Achievements() {
         style={{ backgroundImage: "url('/images/backgroundImg.webp')" }}
       />
 
-      <div className="max-w-[1440px] mx-auto flex flex-col gap-28">
+      <div className="max-w-[1440px] mx-auto lg:px-10 flex flex-col gap-28">
         {/* HEADINGS */}
-        <div className="flex flex-col w-full overflow-hidden relative">
+        <div className="flex flex-col w-full  relative">
           {/* LEFT TEXT */}
           <motion.div
             initial={{ x: "-50%", opacity: 0 }}

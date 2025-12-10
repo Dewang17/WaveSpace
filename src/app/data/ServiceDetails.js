@@ -146,7 +146,7 @@ export const serviceDetails = [
 
   // 14. Conversion Rate (CRO)
   {
-    slug: "cro",
+    slug: "conversion-rate-cro",
     title: "Conversion Rate Optimization Services",
     description:
       "Boost signups, purchases, or demo bookings, without a full redesign. Smarter UX and our CRO service are built for startups, SaaS, and digital products to maximize the website's performance.",
