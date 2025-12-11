@@ -50,14 +50,16 @@ export default function ServiceSection() {
   return (
     <div>
       <section
-        className=" text-[#ffffff] w-full relative overflow-hidden h-full pt-20"
+        className=" text-[#ffffff] w-full relative overflow-hidden h-full pt-10"
         style={{ backgroundColor: service.bgColor }}
       >
-        <div className="flex justify-between items-center mx-auto gap-22 flex-col md:flex-row px-5 md:px-10 lg:px-16">
+        <div className="flex justify-between items-center mx-auto md:gap-22 flex-col md:flex-row px-5 md:px-10 lg:px-16 lg:30 pt-20 md:pt-30">
           {/* LEFT CONTENT */}
           <div className="w-full md:w-1/2 leading-tight">
-            <div className="inline-block text-sm px-14 py-2 rounded-full mb-5 border border-white/20">
-              <span className="font-semibold">Clutch ★★★★★ 5.0</span>
+            <div className="inline-block text-sm px-8 md:px-10 py-2 rounded-full mb-5 border border-white/20">
+              <span className="font-semibold">
+                Clutch <span className="text-red-500">★★★★★</span> 5.0
+              </span>
             </div>
 
             <h1 className="text-xl md:text-6xl font-bold leading-[1.3]">
@@ -92,9 +94,9 @@ export default function ServiceSection() {
             <Image
               src={service.image}
               alt={service.title}
-              width={750}
-              height={500}
-              className="drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)] rounded-xl object-contain"
+              width={750} // default intrinsic width
+              height={500} // default intrinsic height
+              className="w-full h-auto sm:w-full sm:h-auto md:w-[750px] md:h-[500px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)] rounded-xl object-contain"
             />
           </div>
         </div>
@@ -424,8 +426,8 @@ export default function ServiceSection() {
       <ServiceAccordionSection data={content.benefits} reverse />
 
       <section className="w-full py-20">
-        <div className="max-w-8xl mx-auto px-20 ">
-          <div className="bg-[#02004A] text-white rounded-3xl p-8 md:p-12 relative overflow-hidden py-8">
+        <div className="max-w-8xl mx-auto  md:px-20 ">
+          <div className="bg-[#02004A] text-white md:rounded-3xl p-8 md:p-12 relative overflow-hidden py-8">
             <div className="inline-flex items-center gap-2 bg-white/10 text-white px-3 py-1.5 rounded-full border border-white/20 text-xs mb-6">
               <span className="text-yellow-400 text-base">🔥</span>
               Only 4 seats per month

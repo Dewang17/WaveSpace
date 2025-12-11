@@ -5,7 +5,7 @@ import { servicesList } from "@/app/data/ServicesList";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -209,7 +209,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setMobileMenu(false)}
-              className="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium"
+              className="flex items-center gap-2 rounded-full bg-gray-300 px-4 py-2 text-sm font-medium"
             >
               <X size={16} />
               Close

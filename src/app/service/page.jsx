@@ -100,11 +100,13 @@ export default function page() {
   return (
     <>
       <section className="bg-[#000054] text-[#ffffff] w-full  relative overflow-hidden h-full">
-        <div className="flex justify-between items-center mx-auto gap-22 flex-col md:flex-row px-5 md:px-10 lg:px-16 ">
+        <div className="flex justify-between items-center mx-auto md:gap-22 flex-col md:flex-row px-5 md:px-10 lg:px-16 lg:30 pt-20 md:pt-30 ">
           {/* LEFT CONTENT */}
           <div className="w-full md:w-1/2 leading-tight">
-            <div className="inline-block  text-sm px-14 py-2 rounded-full mb-5 border border-white/20">
-              <span className="font-semibold ">Clutch ★★★★★ 5.0</span>
+            <div className="inline-block  text-sm  px-10 py-2 rounded-full mb-5 border border-white/20">
+              <span className="font-semibold">
+                Clutch <span className="text-red-500">★★★★★</span> 5.0
+              </span>
             </div>
 
             <h1 className="text-xl md:text-6xl font-bold leading-[1.3]">

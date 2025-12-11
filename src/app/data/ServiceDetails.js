@@ -68,7 +68,7 @@ export const serviceDetails = [
 
   // 7. UX Consultancy Services
   {
-    slug: "ux-consultancy",
+    slug: "ui-ux-consultancy",
     title: "UX Consultancy Services for Startups",
     description:
       "No need to over-explain. If you’re here, you get it. We design solutions that users actually want. Our UX Consultancy Services are built on real insights and a sharp understanding of user behavior.",
