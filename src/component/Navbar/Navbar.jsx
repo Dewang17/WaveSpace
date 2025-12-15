@@ -63,10 +63,10 @@ export default function Navbar() {
         ${navbarBg} ${textColor}
       `}
     >
-      <div className="container mx-0 md:mx-auto flex justify-between items-center px-6 md:px-8 lg:px-12 py-4">
+      <div className="container mx-0 md:mx-auto flex justify-between items-center px-6 md:px-8 lg:px-12 lg:pl-26">
         {/* LOGO */}
         <Link href="/" className={`text-2xl font-semibold ${textColor}`}>
-          <span className="font-bold">wave</span>space
+          Cashigo 
         </Link>
 
         {/* HAMBURGER for sm/md */}

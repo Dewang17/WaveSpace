@@ -9,6 +9,7 @@ import ImageSlider from "@/component/ImageSlider";
 import PersonSlider from "@/component/PersonSlider";
 import Testimonial from "@/component/Testimonial";
 import LogoSlider from "@/component/LogoSlider";
+import Slider from "@/component/Slider";
 
 const wordsArray = [
   "SaaS companies.",
@@ -66,17 +67,21 @@ export default function Page() {
       <section className="w-full flex items-center justify-between px-10 lg:px-28 py-30 lg:py-40">
         <div>
           <h1 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-[1000] leading-tight tracking-tight">
-            Designed for billions, and we are the team behind{" "}
+            Built for digital economy, and we are the engine powering{" "}
             <span className="inline-block bg-gradient-to-r from-orange-500 to-blue-700 bg-clip-text text-transparent animate-slideUp">
-              future unicorns.
+              seamless payments.
             </span>
           </h1>
-          <p className="text-2xl font-bold ">
-            We’re not just a design agency. We’re the product-thinking team
-            behind 100M+ users, $2B+ funding, & 250+ VC-backed success stories.
+
+          <p className="text-2xl font-bold pt-10">
+            <span className="text-gray-500 text-3xl font-mono">Cashigo</span>{" "}
+            isn’t just a payment tool — it’s a future-ready platform enabling
+            fast, secure, and scalable financial transactions for modern
+            businesses and marketplaces.
           </p>
         </div>
       </section>
+
       <section className="w-full bg-white py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="relative overflow-hidden rounded-2xl">
@@ -99,14 +104,15 @@ export default function Page() {
 
       <section className="w-full bg-[#f5f5f5] py-24 px-6 md:px-10 lg:px-10 2xl:px-28">
         <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-semibold leading-tight text-black">
-          From one laptop to 22+ countries, we helps bold visions become{" "}
-          <span className="text-[#29242469]">intuitive brands.</span>
+          Our Vision for a Next-Gen Digital Economy{" "}
+          <span className="text-[#29242469]">— future-ready finance.</span>
         </h2>
+
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* LEFT IMAGE */}
           <div>
             <Image
-              src="/images/fam.webp" // <-- tum image ka naam / path change kar dena
+              src="/images/fam.webp"
               width={1250}
               height={800}
               alt="team photo"
@@ -117,33 +123,33 @@ export default function Page() {
           {/* RIGHT TEXT CONTENT */}
           <div className="flex flex-col gap-22">
             <div>
-              <p className="text-black text-lg  md:text-xl leading-relaxed font-normal">
-                Wavespace didn't start in a co-working space or some glossy
-                VC-funded setup. It started in a small bedroom, just one laptop,
-                a noisy fan, and a founder who couldn't stop thinking about why
-                so many good ideas fail.
+              {/* Vision for Business */}
+              <p className="text-black text-lg md:text-xl leading-relaxed font-normal">
+                <strong>Vision for Business:</strong> We aim to revolutionize
+                digital payments for businesses by providing seamless, modern
+                solutions that simplify operations, accelerate growth, and help
+                them thrive confidently in the digital era.
               </p>
               <br />
 
-              <p className="text-blacktext-lg  md:text-xlleading-relaxed font-normal">
-                So we helped early teams fix broken onboarding, redesign
-                confusing UX, and turn messy ideas into real products. One
-                founder at a time.
+              {/* Vision for Payer */}
+              <p className="text-black text-lg md:text-xl leading-relaxed font-normal">
+                <strong>Vision for Payer (Consumer/User):</strong> Our goal is
+                to empower payers with smooth, secure, and effortless digital
+                transactions— delivering a trusted and frictionless payment
+                experience every time.
               </p>
               <br />
 
-              <p className="text-black text-lg  md:text-xl leading-relaxed font-normal">
-                But now? Wavespace works with 500+ startups, helps teams launch
-                faster MVPs, improve conversion, and build systems that scale.
-                Our design now powers 100M+ users across 22 countries, from
-                early-stage AI tools to Series B SaaS giants.
-              </p>
-              <br />
-              <p className="text-black text-lg  md:text-xl leading-relaxed font-normal ">
-                But honestly? We still build like it's day one, fast, honest,
-                human. Behind every screen is someone betting it all on an idea.
+              {/* Vision for Ecosystem */}
+              <p className="text-black text-lg md:text-xl leading-relaxed font-normal">
+                <strong>Vision for Ecosystem:</strong> We strive to build an
+                inclusive, innovative, and collaborative financial ecosystem
+                where accessible and efficient services enable progress for
+                businesses, individuals, and communities at scale.
               </p>
             </div>
+
             <div>
               <button className="bg-[#4A3AFF] hover:bg-[#3a2ed1] transition text-white px-7 py-4 rounded-full font-semibold flex items-center gap-2">
                 Shape your vision ↗
@@ -152,12 +158,13 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section className="w-full bg-white py-24 px-6 md:px-10 xl:px-32">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT IMAGE */}
           <div className="flex justify-center lg:justify-start">
             <Image
-              src="/images/boys.webp" // <-- change image
+              src="/images/boys.webp"
               width={500}
               height={550}
               alt="team working"
@@ -168,25 +175,30 @@ export default function Page() {
           {/* RIGHT SIDE TEXT */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-extrabold text-black leading-tight">
-              Why Wavespace? We care <br /> like co-founders.
+              Why Cashigo? Because we <br /> empower growth.
             </h2>
 
             <p className="text-gray-500 mt-4 text-[18px] leading-relaxed max-w-md">
-              Not another agency. We are your team that gives a damn. Because we
-              treat your product like it’s ours.
+              Cashigo simplifies payments, enhances user experience, and equips
+              businesses with the tools they need to scale in the digital
+              economy.
             </p>
 
             <div className="mt-10 space-y-6">
-              {items.map((item, index) => (
+              {[
+                "Efficiency — cashigo streamlines payment processes, reducing operational complexities and saving valuable time.",
+                "Growth — Access new payment methods and expand revenue opportunities with modern, scalable payment solutions.",
+                "Competitive Edge — Offer smarter, faster, and more secure payment experiences that attract today’s digital-first customers.",
+              ].map((text, index) => (
                 <div
-                  key={item}
+                  key={index}
                   className="flex items-center justify-between border-b border-gray-200 pb-4 group cursor-pointer"
                 >
-                  <div className="flex items-center gap-3 text-gray-800 font-medium">
+                  <div className="flex items-center gap-3 text-gray-800 font-medium max-w-md">
                     <span className="text-gray-400">
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                    {item}
+                    {text}
                   </div>
 
                   <ArrowUpRight className="h-5 w-5 text-gray-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition" />
@@ -197,70 +209,87 @@ export default function Page() {
         </div>
 
         {/* BOTTOM SUB SECTION */}
-        <div className="max-w-7xl mx-auto mt-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        {/* <div className="max-w-7xl mx-auto mt-24 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <h3 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-extrabold text-black leading-tight">
-            From vision to velocity, we are <br />
-            <span className="text-gray-500">all in one place.</span>
+            Powering efficiency, growth & <br />
+            <span className="text-gray-500">your competitive edge.</span>
           </h3>
 
           <button className="bg-[#4A3AFF] hover:bg-[#362ec5] text-white px-8 py-3 rounded-full font-semibold inline-flex items-center gap-2 transition shadow-sm">
             View services <ArrowUpRight className="h-5 w-5" />
           </button>
-        </div>
+        </div> */}
       </section>
-      {/* We don’t just design. We believe, then deliver. */}
+
       <section>
-        <section className="bg-white py-20 px-6 md:px-12 xl:px-24">
-          <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-1 gap-12 md:gap-20 items-center">
-            {/* LEFT IMAGE */}
-            <div className="relative w-full">
-              <div className=" overflow-hidden shadow-md">
-                <Image
-                  src="/images/believe-deliver.webp" // update this path with your image
-                  alt="Designer working on laptop"
-                  width={700}
-                  height={500}
-                  className="w-full h-auto object-cover "
-                  priority
-                />
-              </div>
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between px-20 py-10">
+          <h2 className="text-4xl md:text-6xl font-semibold leading-tight text-gray-900 lg:pb-10">
+            From vision to velocity, we are <br />
+            <span className="text-gray-400 font-semibold">
+                all in one place.
+              </span>
+          </h2>
+
+          <button className="mt-6 md:mt-0 bg-[#3F2FFE] hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-semibold transition">
+            View Service    
+          </button>
+        </div>
+        <Slider />
+      </section>  
+
+      {/* We don’t just design. We believe, then deliver. */}
+
+      <section className="bg-white py-20 px-6 md:px-12 xl:px-24">
+        <div className=" max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT IMAGE */}
+          <div className="relative w-full flex justify-center">
+            <div className="overflow-hidden shadow-md w-full max-w-[450px]">
+              <Image
+                src="/images/believe-deliver.webp"
+                alt="Designer working on laptop"
+                width={700}
+                height={500}
+                className=" object-cover"
+                priority
+              />
             </div>
+          </div>
 
-            {/* RIGHT CONTENT */}
-            <div className="flex flex-col justify-center text-gray-900">
-              <h2 className=" text-4xl md:text-[2.8rem] leading-tight font-semibold mb-6">
-                We don't just design.{" "}
-                <span className="text-gray-400 font-semibold mb-6">
-                  We believe, then deliver.
-                </span>
-              </h2>
+          {/* RIGHT CONTENT */}
+          <div className="flex flex-col justify-center text-gray-900 lg:pl-10">
+            <h2 className="text-4xl md:text-[2.8rem] leading-tight font-semibold mb-6">
+              We don't just design.{" "}
+              <span className="text-gray-400 font-semibold">
+                We believe, then deliver.
+              </span>
+            </h2>
 
-              <p className="text-lg text-gray-600  mb-8">
-                We've seen great ideas fail just because the UX didn't work.
-                That's why we design to solve, not just to impress. When you
-                care about users like a founder does, design becomes direction,
-                not decoration. And that mindset has changed everything for our
-                clients:
-              </p>
+            <p className="text-lg text-gray-600 mb-8 max-w-[600px]">
+              We've seen great ideas fail just because the UX didn't work.
+              That's why we design to solve, not just to impress. When you care
+              about users like a founder does, design becomes direction, not
+              decoration. And that mindset has changed everything for our
+              clients:
+            </p>
 
-              <ul className="space-y-3 mb-10 text-xl font-bold">
-                <li>35% faster product launches through scalable systems</li>
-                <li>480+ dev hours saved per project</li>
-                <li>Up to 67% shorter onboarding time</li>
-                <li>92% client satisfaction across 250+ global brands</li>
-                <li>40% drop in user drop-off through better UX</li>
-              </ul>
+            <ul className="space-y-3 mb-10 text-xl font-bold">
+              <li>35% faster product launches through scalable systems</li>
+              <li>480+ dev hours saved per project</li>
+              <li>Up to 67% shorter onboarding time</li>
+              <li>92% client satisfaction across 250+ global brands</li>
+              <li>40% drop in user drop-off through better UX</li>
+            </ul>
 
-              <div className="flex items-center gap-4 flex-wrap">
-                <div className="bg-[#4f46e5] hover:bg-[#4338ca] text-white text-base font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all duration-300">
-                  Build your product
-                  <ArrowUpRight className="w-4 h-4" />
-                </div>
+            <div className="flex items-center gap-4 flex-wrap">
+              <div className="bg-[#4f46e5] hover:bg-[#4338ca] text-white text-base font-medium px-6 py-3 rounded-full flex items-center gap-2 transition-all duration-300">
+                Build your product
+                <ArrowUpRight className="w-4 h-4" />
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
+
       {/* Founder’s Led Journey */}
       <section
         className="bg-cover bg-center relative w-full"
@@ -465,15 +494,16 @@ export default function Page() {
         <div className="container mx-auto flex flex-col px-6 md:px-10 max-w-[1440px]">
           {/* --- Top Text Section --- */}
           <div className="flex justify-between items-end flex-wrap gap-[2rem] max-md:gap-[1rem] max-md:flex-col">
-            <h3 className="text-[2rem] font-medium max-md:text-[1.25rem] xl:pb-52 ">
-              Meet our creatives
+            <h3 className="text-[2rem] font-medium max-md:text-[1.25rem] xl:pb-52">
+              Meet the team behind Cashigo
             </h3>
+
             <div className="max-w-[70%] max-lg:max-w-full">
               <h3 className="text-[30px] md:text-[40px] lg:text-[50px] leading-[1.3em] font-bold max-md:text-[1.875rem]">
-                We are your product geek, UX mind, UI lovers, & Webflow
-                builders. <br className="hidden md:block" />
-                Your creative team,{" "}
-                <span className="text-[#29242469]">just a Slack away.</span>
+                We are fintech builders, payment architects, UX thinkers, & API
+                specialists. <br className="hidden md:block" />
+                Your payments partner,{" "}
+                <span className="text-[#29242469]">always connected.</span>
               </h3>
             </div>
           </div>
@@ -485,12 +515,12 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1rem]">/01</div>
               <div className="flex flex-col gap-[4px]">
                 <div className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35] max-md:text-[2rem]">
-                  Dhaka
+                  India
                 </div>
                 <p className="text-[#3a3a3a] text-[1rem] lg:text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
-                  Global team working from SF, Berlin,
+                  Fintech-first team serving businesses
                   <br />
-                  KL, Jakarta, Sydney
+                  across urban & emerging markets
                 </p>
               </div>
             </div>
@@ -500,12 +530,12 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1rem]">/02</div>
               <div className="flex flex-col gap-[4px]">
                 <div className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35] max-md:text-[2rem]">
-                  15+
+                  20+
                 </div>
                 <p className="text-[#3a3a3a] text-[1rem] lg:text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
-                  Industries served
+                  Payment use cases supported
                   <br />
-                  (AI, SaaS, Fintech, Health, B2B, more)
+                  (UPI, Cards, Wallets, APIs, Payouts)
                 </p>
               </div>
             </div>
@@ -515,25 +545,26 @@ export default function Page() {
               <div className="text-[#7e7e81] text-[1rem]">/03</div>
               <div className="flex flex-col gap-[4px]">
                 <div className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35] max-md:text-[2rem]">
-                  10M+ users
+                  5M+
                 </div>
                 <p className="text-[#3a3a3a] text-[1rem] lg:text-[1.125rem] leading-[1.55] max-md:text-[0.875rem]">
-                  Marketplace users served
+                  Secure transactions processed
                   <br />
-                  across 10+ time zones
+                  across Cashigo platforms
                 </p>
               </div>
             </div>
           </div>
         </div>
+
         {/* TEAM GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-6 mt-20 mb-20 px-5 lg:px-12">
-          {/* Team Members Inline */}
+          {/* Member 1 */}
           <div className="flex flex-col items-start">
-            <div className="w-full overflow-hidden ">
+            <div className="w-full overflow-hidden">
               <Image
                 src="/images/team1.webp"
-                alt="Shahid Miah"
+                alt="Founder"
                 width={306}
                 height={386}
                 className="object-cover w-full h-[24.125rem]"
@@ -545,11 +576,12 @@ export default function Page() {
             <div className="text-[#7e7e81] text-[1.125rem]">Founder & CEO</div>
           </div>
 
+          {/* Member 2 */}
           <div className="flex flex-col items-start">
-            <div className="w-full overflow-hidden ">
+            <div className="w-full overflow-hidden">
               <Image
                 src="/images/team2.webp"
-                alt="Noor Mohammad"
+                alt="Head of Product"
                 width={306}
                 height={386}
                 className="object-cover w-full h-[24.125rem]"
@@ -558,14 +590,17 @@ export default function Page() {
             <div className="mt-6 mb-1 text-[1.375rem] font-semibold">
               Noor Mohammad
             </div>
-            <div className="text-[#7e7e81] text-[1.125rem]">Head of Design</div>
+            <div className="text-[#7e7e81] text-[1.125rem]">
+              Head of Product & Payments
+            </div>
           </div>
 
+          {/* Member 3 */}
           <div className="flex flex-col items-start">
             <div className="w-full overflow-hidden">
               <Image
                 src="/images/team3.webp"
-                alt="Barakatullah"
+                alt="Engineer"
                 width={306}
                 height={386}
                 className="object-cover w-full h-[24.125rem]"
@@ -575,15 +610,16 @@ export default function Page() {
               Barakatullah
             </div>
             <div className="text-[#7e7e81] text-[1.125rem]">
-              Senior Product Designer
+              Senior Platform Engineer
             </div>
           </div>
 
+          {/* Member 4 */}
           <div className="flex flex-col items-start">
-            <div className="w-full overflow-hidden ">
+            <div className="w-full overflow-hidden">
               <Image
                 src="/images/team4.webp"
-                alt="Rabbi Mia"
+                alt="Designer"
                 width={306}
                 height={386}
                 className="object-cover w-full h-[24.125rem]"
@@ -592,74 +628,73 @@ export default function Page() {
             <div className="mt-6 mb-1 text-[1.375rem] font-semibold">
               Rabbi Mia
             </div>
-            <div className="text-[#7e7e81] text-[1.125rem]">UI/UX Designer</div>
+            <div className="text-[#7e7e81] text-[1.125rem]">
+              UX & Compliance Designer
+            </div>
           </div>
         </div>
 
         {/* BELIEFS SECTION */}
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10 px-5 lg:px-12">
-          {/* LEFT SIDE TITLE */}
+          {/* LEFT */}
           <div className="w-full lg:w-1/2">
             <h2 className="text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-bold leading-[1.35]">
-              The beliefs{" "}
+              The principles{" "}
               <span className="text-[#29242469]">
-                behind <br /> the builds
+                powering <br /> Cashigo
               </span>
             </h2>
           </div>
 
-          {/* RIGHT SIDE BELIEFS INLINE */}
+          {/* RIGHT */}
           <div className="flex flex-col gap-14 w-full lg:max-w-[40.375rem]">
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">01</div>
-              <div className="flex flex-col gap-3">
-                <div className="text-[1.5rem] font-bold">Empathy</div>
-                <p className=" md:text-[1rem] leading-[1.54]">
-                  Before we create a design, we listen. Because the good always
-                  comes from understanding. We put ourselves in your users'
-                  shoes so your product enters their lives smoothly.
+              <div>
+                <div className="text-[1.5rem] font-bold">Trust</div>
+                <p className="md:text-[1rem] leading-[1.54]">
+                  Payments are built on trust. Cashigo prioritizes security,
+                  compliance, and transparency to protect every transaction.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">02</div>
-              <div className="flex flex-col gap-3">
-                <div className="text-[1.5rem] font-bold">Clarity</div>
+              <div>
+                <div className="text-[1.5rem] font-bold">Simplicity</div>
                 <p className="md:text-[1rem] leading-[1.54]">
-                  We don't design to sound smart. We design so your users feel
-                  smart. Every word, flow, and screen is crafted to remove
-                  friction, not add flash.
+                  We simplify complex financial flows into clean, intuitive
+                  experiences that move money faster and smarter.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">03</div>
-              <div className="flex flex-col gap-3">
-                <div className="text-[1.5rem] font-bold">Momentum</div>
+              <div>
+                <div className="text-[1.5rem] font-bold">Reliability</div>
                 <p className="md:text-[1rem] leading-[1.54]">
-                  Start small. Learn fast. Move with focus. We don't believe in
-                  perfection. We believe in progress. That is why we ship, test,
-                  and stay North Star aligned.
+                  Cashigo is built for scale and uptime — because reliability
+                  isn’t optional in modern finance.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="text-[#7e7e81] text-[1.375rem] mt-[2px]">04</div>
-              <div className="flex flex-col gap-3">
-                <div className="text-[1.5rem] font-bold">Outcomes</div>
+              <div>
+                <div className="text-[1.5rem] font-bold">Growth</div>
                 <p className="md:text-[1rem] leading-[1.54]">
-                  A good-looking app that doesn't convert is just decoration. We
-                  obsess over real results — conversions, activations, and
-                  retention.
+                  Every feature is designed to help businesses grow — more
+                  users, better conversions, and scalable revenue.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       {/* from bangladesh to usa */}
       <PersonSlider />
       {/* process behind our */}

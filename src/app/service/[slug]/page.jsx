@@ -4,7 +4,7 @@ import Image from "next/image";
 import { serviceDetails } from "@/app/data/ServiceDetails";
 import LogoSlider from "@/component/LogoSlider";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import Sliderr from "@/component/Sliderr";
+import Sliderr from "@/component/Slider";
 import ProcessSteps from "@/component/ProcessSteps";
 import { useState } from "react";
 import Achievements from "@/component/Achievements";
@@ -14,6 +14,7 @@ import FAQSection from "@/component/FAQSection";
 import Form from "@/component/Form";
 import ServiceAccordionSection from "@/component/ServiceAccordionSection";
 import { serviceExtras } from "@/app/data/serviceExtras";
+import FintechProcess from "@/component/FintechProcess";
 
 export default function ServiceSection() {
   const { slug } = useParams();
@@ -105,70 +106,7 @@ export default function ServiceSection() {
       {/* the slug part */}
       <ServiceAccordionSection data={content.philosophy} />
 
-      <section className="bg-black w-full py-20 lg:px-10 md:px-4">
-        <div className=" px-6">
-          <h1 className="text-white text-3xl md:text-5xl font-semibold leading-tight">
-            We deliver on time, in days and weeks <br />
-            <span className="text-[#555555]">— not months.</span>
-          </h1>
-        </div>
-
-        <div className="flex flex-col lg:flex-row px-8 gap-16 mt-16">
-          {/* LEFT BOX */}
-          <div className="bg-[#333333] p-10 lg:w-[65%] w-full space-y-6 border border-gray-800">
-            <p className="text-white text-2xl font-normal">
-              <span className="text-gray-500 mr-2">01</span>Onboard in 1 day
-            </p>
-            <hr className="border border-gray-500" />
-
-            <p className="text-white text-2xl font-normal">
-              <span className="text-gray-500 mr-2">02</span>Understand Scope &
-              Strategy
-            </p>
-            <hr className="border border-gray-500" />
-            <p className="text-white text-2xl font-normal">
-              <span className="text-gray-500 mr-2">03</span>First designs in 4-5
-              days
-            </p>
-          </div>
-
-          {/* RIGHT CONTENT */}
-          <div className="lg:w-[35%] w-full flex flex-col justify-between">
-            <p className="text-white text-xl leading-relaxed">
-              “Wavespace is a fantastic design team, with a healthy blend of UI
-              and UX skills. Highly recommended”
-            </p>
-
-            <div className="flex items-center gap-4 mt-6">
-              <Image
-                src="/images/man1.webp"
-                width={60}
-                height={60}
-                alt="person"
-              />
-
-              <div>
-                <h2 className="text-white font-semibold">James Mcglade</h2>
-                <p className="text-gray-300 text-sm">
-                  Founder, Growth Alliance
-                </p>
-              </div>
-            </div>
-
-            <button className="bg-yellow-300 text-black px-2 py-3 rounded-4xl font-medium mt-6 hover:bg-yellow-300 transition w-40">
-              Book a call
-            </button>
-          </div>
-        </div>
-        <div className="px-6 pt-24">
-          <h1 className="text-white  text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-semibold leading-tight">
-            From startup to enterprise, grow your business <br />
-            <span className="text-[#555555]">
-              with fast and creative designs!
-            </span>
-          </h1>
-        </div>
-      </section>
+      <FintechProcess />
       {/* slider */}
       <Sliderr />
       {/* industry experts  */}

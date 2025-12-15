@@ -25,24 +25,14 @@ export default function Review() {
         sm:gap-4
       "
         >
-          <h2
-            className="
-    max-w-[1312px]
-    font-bold
-    text-[1.85rem] leading-[1.3] tracking-[1px]
-    md:text-[1.85rem]
-    lg:text-[2.5rem]
-   2xl:text-[3.5rem]
-   
-  "
-          >
-            Find your best design into us.{" "}
+          <h2 className="max-w-[1312px] font-bold text-[1.85rem] leading-[1.3] tracking-[1px] md:text-[1.85rem] lg:text-[2.5rem] 2xl:text-[3.5rem]">
+            Trusted by fintech teams worldwide.{" "}
             <span className="text-[#7e7e81]">We</span>
             <br />
             <span className="text-[#7e7e81]">
-              guarantee next success is yours!
+              design secure, scalable financial products.
             </span>
-          </h2>
+          </h2> 
         </div>
 
         {/* ---------- SWIPER CONTAINER ---------- */}
@@ -78,7 +68,9 @@ export default function Review() {
 
                 <div className=" text-red-500 text-3xl">★★★★★</div>
 
-                <p className=" text-sm text-gray-600">200+ reviews</p>
+                <p className=" text-sm text-gray-600">
+                  200+ verified fintech reviews
+                </p>
 
                 <div className="flex gap-6 mt-auto pt-6">
                   <img
@@ -109,11 +101,13 @@ export default function Review() {
                 <p className="tes_brand-name">Kodezi</p>
 
                 <p className="tes_para">
-                  "Wavespace very{" "}
-                  <span className="font-bold text-black">reliable</span> at all
-                  times and we have enjoyed working & designs are{" "}
-                  <span className="font-bold text-black">truly impressive</span>
-                  "
+                  "Wavespace has been extremely{" "}
+                  <span className="font-bold text-black">reliable</span>{" "}
+                  throughout our fintech journey. The product designs are{" "}
+                  <span className="font-bold text-black">
+                    clean, compliant, and user-focused
+                  </span>
+                  ."
                 </p>
 
                 <div className="tes_profile-wrap">
@@ -137,12 +131,12 @@ export default function Review() {
                 <p className="tes_brand-name">tournated</p>
 
                 <p className="tes_para">
-                  "<span className="font-bold text-black">Highly happy</span>{" "}
-                  with a design delivered by Wavespace.{" "}
+                  "<span className="font-bold text-black">Very satisfied</span>{" "}
+                  with the fintech dashboard by Wavespace.{" "}
                   <span className="font-bold text-black">
-                    Definitely will keep working
-                  </span>{" "}
-                  with Wavespace. Great and quality smooth communication."
+                    Smooth communication and great results
+                  </span>
+                  ."
                 </p>
 
                 <div className="tes_profile-wrap">
@@ -166,13 +160,15 @@ export default function Review() {
                 <p className="tes_brand-name">ActiveSync</p>
 
                 <p className="tes_para">
-                  "Wavespace brought my{" "}
-                  <span className="font-bold text-black">idea to life</span>.
-                  Taken great care of my business & implement{" "}
+                  "Wavespace transformed our{" "}
                   <span className="font-bold text-black">
-                    best user experience
-                  </span>{" "}
-                  possible"
+                    fintech concept into reality
+                  </span>
+                  . They focused heavily on{" "}
+                  <span className="font-bold text-black">
+                    security, usability, and customer trust
+                  </span>
+                  ."
                 </p>
 
                 <div className="tes_profile-wrap">
@@ -195,15 +191,12 @@ export default function Review() {
                 <p className="tes_brand-name">Luxara</p>
 
                 <p className="tes_para">
-                  "Very professional,{" "}
+                  "Very professional team with{" "}
                   <span className="font-bold text-black">
-                    top notch communication
+                    excellent fintech product knowledge
                   </span>{" "}
-                  & absolute pleasure to work. Super satisfied with results.{" "}
-                  <span className="font-bold text-black">
-                    Highly recommended
-                  </span>
-                  !"
+                  and clear communication. We are extremely happy with the final
+                  results."
                 </p>
 
                 <div className="tes_profile-wrap">
@@ -228,10 +221,14 @@ export default function Review() {
 
                 <p className="tes_para">
                   "Wavespace delivered a{" "}
-                  <span className="font-bold text-black">stunning</span>
-                  and professional mobile UI design quickly. Highly recommend
-                  their{" "}
-                  <span className="font-bold text-black">excellent work</span>!"
+                  <span className="font-bold text-black">
+                    secure and intuitive
+                  </span>{" "}
+                  mobile fintech UI in record time. Their{" "}
+                  <span className="font-bold text-black">
+                    attention to detail
+                  </span>{" "}
+                  truly stands out."
                 </p>
 
                 <div className="tes_profile-wrap">
@@ -255,12 +252,11 @@ export default function Review() {
                 <p className="tes_brand-name">Augalo</p>
 
                 <p className="tes_para">
-                  "Wavespace{" "}
-                  <span className="font-bold text-black">satisfied</span> me
-                  from the very first order. I able to call on him again & the
-                  result as
-                  <span className="font-bold text-black"> brilliant</span> as
-                  ever."
+                  "Wavespace exceeded expectations from the first delivery.{" "}
+                  <span className="font-bold text-black">
+                    Every fintech feature
+                  </span>{" "}
+                  was thoughtfully designed and executed flawlessly."
                 </p>
 
                 <div className="tes_profile-wrap">
@@ -284,9 +280,9 @@ export default function Review() {
                 <p className="tes_brand-name">LifeTales</p>
 
                 <p className="tes_para">
-                  "Wavespace is a fantastic design team, with a{" "}
+                  "An outstanding fintech design partner with a{" "}
                   <span className="font-bold text-black">
-                    healthy blend of UI and UX skills
+                    strong balance of UX clarity and UI precision
                   </span>
                   . Highly recommended."
                 </p>
@@ -312,13 +308,11 @@ export default function Review() {
                 <p className="tes_brand-name">Krispy</p>
 
                 <p className="tes_para">
-                  "Super awesome design team,{" "}
+                  "One of the best fintech design teams we’ve worked with.{" "}
                   <span className="font-bold text-black">
-                    I came back again
+                    We returned for another project
                   </span>{" "}
-                  because how satisfied I was last time.{" "}
-                  <span className="font-bold text-black">As usual, great</span>
-                  !"
+                  because of the consistent quality and speed."
                 </p>
 
                 <div className="tes_profile-wrap">

@@ -8,6 +8,8 @@ import Achievements from "../../component/Achievements";
 import FAQSection from "@/component/FAQSection";
 import Form from "@/component/Form";
 import Testimonial from "@/component/Testimonial";
+import Sliider from "@/component/Sliider";
+import Slider from "@/component/Slider";
 export default function page() {
   const states = [
     {
@@ -169,52 +171,27 @@ export default function page() {
           </div>
         </div>
       </section>
-      {/* <section className="w-full py-24 px-10 bg-gradient-to-b from-white to-gray-200">
-        <div className="px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-semibold mb-12 leading-tight tracking-[0.01em]">
-            Bold UX design, billion-dollar proof. We
-            <br />
-            measure impact,{" "}
-            <span className="text-gray-500">not just ship pixels.</span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-            {states.slice(0, 3).map((item, i) => (
-              <div key={i} className="bg-white rounded-xl p-10 text-left">
-                <span className="text-gray-400 text-lg ">{item.id}</span>
-                <h3 className="text-5xl font-semibold mt-6 mb-3 pt-30">
-                  {item.title}
-                </h3>
-                <p
-                  className="text-gray
-                 text-lg w-50"
-                >
-                  {item.sub}
-                </p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
-            {states.slice(3).map((item, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-xl shadow-sm  p-10 text-left"
-              >
-                <span className="text-gray-400 text-lg pb-70">{item.id}</span>
-                <h3 className="text-5xl font-semibold mt-6 mb-3 pt-30">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-lg w-100">{item.sub}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>  */}
-      <Testimonial/>
+
+      <Testimonial />
 
       <section>
         <LogoSlider />
+      </section>
+
+      <section>
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between px-20 py-10">
+          <h2 className="text-4xl md:text-6xl font-semibold leading-tight text-gray-900 lg:pb-10">
+            Our comprehensive services for <br />
+            <span className="text-gray-400 font-semibold">
+              Global businesses
+            </span>
+          </h2>
+
+          <button className="mt-6 md:mt-0 bg-[#3F2FFE] hover:bg-indigo-700 text-white px-8 py-4 rounded-full font-semibold transition">
+            Choose a plan
+          </button>
+        </div>
+        <Slider />
       </section>
       <section>
         <OurMembership />

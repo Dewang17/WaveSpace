@@ -4,16 +4,28 @@ const Testimonial = () => {
   const states = [
     {
       id: "/01",
-      title: "92%",
-      sub: "client satisfaction in post-project reviews",
+      title: "98%",
+      sub: "Customer satisfaction across PayIn & Payout services",
     },
-    { id: "/02", title: "$10B+", sub: "valuation influenced by our design" },
-    { id: "/03", title: "2019", sub: "Founded, 6 years of experience" },
-    { id: "/04", title: "25M+", sub: "monthly visits on client platforms" },
+    {
+      id: "/02",
+      title: "₹50,000 Cr+",
+      sub: "Annual transaction volume processed across industries",
+    },
+    {
+      id: "/03",
+      title: "2021",
+      sub: "Founded, building secure fintech infra for 4+ years",
+    },
+    {
+      id: "/04",
+      title: "20M+",
+      sub: "Successful transactions handled every month",
+    },
     {
       id: "/05",
-      title: "500+ global project",
-      sub: "250+ testimonial with trusted by YC-backed, VC-funded, a16z, Sequoia",
+      title: "600+ businesses served",
+      sub: "Used by D2C brands, MSMEs, NBFCs, and digital startups",
     },
   ];
 
@@ -90,10 +102,9 @@ const Testimonial = () => {
     <section className="w-full py-24 px-3 md:px-10 bg-gradient-to-b from-white to-gray-200">
       <div className="2xl:px-8">
         <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] xl:text-6xl font-semibold mb-12 leading-tight tracking-[0.01em]">
-          Bold UX design, billion-dollar proof. We
-          <br />
-          measure impact,{" "}
-          <span className="text-gray-500">not just ship pixels.</span>
+          Powering Digital Finance With Precision.
+          {" "}
+          <span className="text-gray-500">Real Impact, Real Performance.</span>
         </h2>
 
         {/* ===================== SLIDER FOR SM + MD (visible up to md) ===================== */}

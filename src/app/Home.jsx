@@ -13,11 +13,12 @@ import { Mail, Phone } from "lucide-react";
 import Slider from "@/component/Slider";
 import ImageSlider from "@/component/ImageSlider";
 import PersonSlider from "@/component/PersonSlider";
-import Sliderr from "@/component/Sliderr";
+import Sliderr from "@/component/Slider";
 import Testimonial from "@/component/Testimonial";
 import LogoSlider from "@/component/LogoSlider";
 import Review from "@/component/Review";
 import { MdOutlineArrowOutward, MdReviews } from "react-icons/md";
+import FintechProcess from "@/component/FintechProcess";
 
 // import Form from "../component/Form";
 const page = () => {
@@ -25,7 +26,7 @@ const page = () => {
     "SaaS companies.",
     "AI/ML Solutions.",
     "Future Unicorns.",
-    "Startups.",
+    "High-Growth Startups.",
   ];
   const data = [
     {
@@ -140,19 +141,16 @@ const page = () => {
     <>
       <div className="mt-20">
         <section className="w-full flex flex-col lg:flex-col px-6 md:px-12 lg:px-20 py-16 lg:py-24">
-          {/* TOP: GLOBAL UX + REVIEW SIDE BY SIDE ON LG */}
           <div className="w-full flex flex-col md:flex-col lg:flex-row justify-between items-center gap-10">
-            {/* Global UX BLOCK */}
             <div className="w-full lg:w-3/4 space-y-4">
               <div className="inline-flex items-center border border-gray-200 gap-2 px-3 py-1 rounded-full text-xs sm:text-[13px] font-medium">
                 <span className="h-3 w-3 bg-[#adff3e] rounded-full"></span>
                 Available for New Projects
               </div>
 
-              <h1 className="text-[34px] sm:text-[42px] md:text-[52px] lg:text-[64px] xl:text-[82px] font-[700] leading-tight tracking-tight">
-                Global UX design <br />
-                agency digital partner <br />
-                for{" "}
+              <h1 className="text-[34px] sm:text-[42px] md:text-[52px] lg:text-[54px] xl:text-[62px] font-[700] leading-tight tracking-tight">
+                Your Fintech Frontier <br />
+                Seamless Payments & Banking with{" "}
                 <span
                   key={index}
                   className="inline-block bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent animate-slideUp"
@@ -160,17 +158,31 @@ const page = () => {
                   {words[index]}
                 </span>
               </h1>
+
+              {/* <p className="text-[16px] md:text-[18px] leading-relaxed text-black font-[500] sm:max-w-[850px]">
+                Cashigo is a leading Fintech & Third-Party Service Provider
+                (TPSP), empowering businesses across India’s digital economy
+                with seamless payment solutions. From D2C brands and MSMEs to
+                large enterprises, we help businesses transact effortlessly,
+                scale faster, and grow smarter.
+              </p> */}
+
+              {/* <p className="text-[16px] md:text-[18px] leading-relaxed text-black font-[500] sm:max-w-[650px]">
+                Welcome to <span className="font-semibold">cashigo</span> — your
+                all-in-one payment solution designed to streamline financial
+                operations and accelerate business growth.
+              </p> */}
             </div>
 
-            {/* REVIEW BLOCK */}
-            <div className="w-full lg:w-1/4 lg:pt-30 ">
-              <p className="text-[16px] sm:max-w-[300px]  md:max-w-[500px] md:text-[18px] leading-relaxed text-black font-[500]">
-                Wavespace is a global UX agency that helps brands scale with
-                fast, high performance digital experiences.
+            {/* RIGHT CONTENT BLOCK */}
+            <div className="w-full lg:w-1/4 lg:mt-10">
+              <p className="text-[16px] md:text-[18px] leading-relaxed text-black font-[500] sm:max-w-[300px] md:max-w-[600px]">
+                Experience the future of payment solutions with C ashigo —
+                Seamless, Secure, and Scalable.
               </p>
 
               <div className="flex flex-wrap items-center gap-6 mt-6 md:justify-start">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 -space-x-4">
                   <img
                     src="/images/man1.webp"
                     className="h-8 w-8 rounded-full"
@@ -183,8 +195,8 @@ const page = () => {
                     src="/images/man3.webp"
                     className="h-8 w-8 rounded-full"
                   />
-                  <span className="font-semibold text-gray-800">
-                    Loved by 500+ Founders
+                  <span className="font-semibold text-gray-800 lg:pl-6">
+                    Trusted by 500+ Businesses
                   </span>
                 </div>
 
@@ -211,14 +223,19 @@ const page = () => {
               </div>
             </div>
           </div>
+          {/* BOTTOM TAGLINE */}
+          <p className="pt-8 text-[15px] text-gray-700 font-medium">
+            Secure Transactions | Seamless API Integration | End-to-End PayIn &
+            Payout Solutions
+          </p>
 
-          {/* BUTTONS BELOW BOTH BLOCKS */}
+          {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pt-10">
             <button className="bg-[#242424] text-white px-7 py-4 sm:px-9 sm:py-5 rounded-full font-semibold hover:bg-blue-500 transition duration-300 cursor-pointer w-full sm:w-auto">
               Book a call
             </button>
 
-            <button className="bg-white text-gray-700 border border-gray-300 px-6 py-4 sm:py-5 rounded-full text-base sm:text-lg font-semibold hover:opacity-90 transition duration-300 cursor-pointer flex items-center gap-3 w-full sm:w-auto">
+            <button className="bg-white text-gray-700 border border-gray-300 px-6 py-2 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:opacity-90 transition duration-300 cursor-pointer flex items-center gap-3 w-full sm:w-auto">
               <img
                 src="/images/icon/icon1.svg"
                 className="w-6 h-6 sm:w-7 sm:h-7"
@@ -279,70 +296,9 @@ const page = () => {
         </section>
 
         <Founders />
-        <section className="bg-black w-full py-20 lg:px-10 md:px-4">
-          <div className=" px-6">
-            <h1 className="text-white text-3xl md:text-5xl font-semibold leading-tight">
-              We deliver on time, in days and weeks <br />
-              <span className="text-[#555555]">— not months.</span>
-            </h1>
-          </div>
 
-          <div className="flex flex-col lg:flex-row px-8 gap-16 mt-16">
-            {/* LEFT BOX */}
-            <div className="bg-[#333333] p-10 lg:w-[65%] w-full space-y-6 border border-gray-800">
-              <p className="text-white text-2xl font-normal">
-                <span className="text-gray-500 mr-2">01</span>Onboard in 1 day
-              </p>
-              <hr className="border border-gray-500" />
+        <FintechProcess />
 
-              <p className="text-white text-2xl font-normal">
-                <span className="text-gray-500 mr-2">02</span>Understand Scope &
-                Strategy
-              </p>
-              <hr className="border border-gray-500" />
-              <p className="text-white text-2xl font-normal">
-                <span className="text-gray-500 mr-2">03</span>First designs in
-                4-5 days
-              </p>
-            </div>
-
-            {/* RIGHT CONTENT */}
-            <div className="lg:w-[35%] w-full flex flex-col justify-between">
-              <p className="text-white text-xl leading-relaxed">
-                “Wavespace is a fantastic design team, with a healthy blend of
-                UI and UX skills. Highly recommended”
-              </p>
-
-              <div className="flex items-center gap-4 mt-6">
-                <Image
-                  src="/images/man1.webp"
-                  width={60}
-                  height={60}
-                  alt="person"
-                />
-
-                <div>
-                  <h2 className="text-white font-semibold">James Mcglade</h2>
-                  <p className="text-gray-300 text-sm">
-                    Founder, Growth Alliance
-                  </p>
-                </div>
-              </div>
-
-              <button className="bg-yellow-300 text-black px-2 py-3 rounded-4xl font-medium mt-6 hover:bg-yellow-300 transition w-40">
-                Book a call
-              </button>
-            </div>
-          </div>
-          <div className="px-6 pt-24">
-            <h1 className="text-white  text-3xl md:text-4xl lg:text-4xl 2xl:text-6xl font-semibold leading-tight">
-              From startup to enterprise, grow your business <br />
-              <span className="text-[#555555]">
-                with fast and creative designs!
-              </span>
-            </h1>
-          </div>
-        </section>
         <Sliderr />
         <Achievements />
         <Review />

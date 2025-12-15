@@ -1,250 +1,156 @@
-
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import { useScroll } from "framer-motion";
+
 import Image from "next/image";
-import { PiLinkSimpleBold } from "react-icons/pi";
 
-// ✅ Flattened slides extracted from features
-const features = [
+const SLIDE_HEIGHT = 510;
+
+const slides = [
   {
-    name: "Connected Banking",
-    slides: [
-      {
-        key: "s1",
-        title: "CONNECTED BANKING",
-        subtitle: "All Your Current Accounts at One Place",
-        img: "/images/svg/one.webp",
-        description:
-          "Connect & manage existing bank accounts, consolidate banking, payments, accounting and expense management in a single interface.",
-        buttons: ["Know More"],
-      },
-      {
-        key: "s2",
-        title: "Payouts",
-        subtitle: "Payments Made Simple",
-        img: "/images/svg/two.webp",
-        description:
-          "Pay vendors, customers, and employees instantly through all the payment methods - bank accounts, UPI, cards & wallets",
-        buttons: ["Single Payouts", "Bulk payouts" ],
-      },
-      {
-        key: "s3",
-        title: "Collections",
-        subtitle: "Collect Payments On Time",
-        img: "/images/svg/three.webp",
-        description:
-          "Provide multiple payment options with our streamlined collection solutions, simplify your invoicing process, and set automated reminders",
-        buttons: ["UPI QR", "POS Device", "Payment Gateway"],
-      },
+    bg: "#3B32F0",
+    img: "/images/slider/s1.webp",
+    title: "Branding Identity",
+    desc: "Create a trusted, global brand with our expert designs and strategies. We help improve your brand's visibility, credibility, and connection with customers both online and offline.",
+    cta: "Build brand identity",
+    text: "text-white",
+    tags: [
+      "Motion graphics design",
+      "Graphic design",
+      "Startup branding",
+      "Brand identity design",
+      "Corporate identity design",
+      "Brand strategy",
     ],
   },
-  {
-    name: "Beyond Banking",
-    slides: [
-      {
-        key: "s4",
-        title: "CARDS",
-        subtitle: "Take Complete Control of Business Spending",
-        img: "/images/svg/four.webp",
-        description:
-          "Powerful corporate cards that give you real-time control, track card expenses, set limits for spend control, approve expenses and visibility into business spending",
-        buttons: ["Know More"],
-      },
-      {
-        key: "s5",
-        title: "Smart POS Machines",
-        subtitle: "Affordable Solutions for Your Growing Business",
-        img: "/images/svg/five.webp",
-        description:
-          "Seamless payment processing with quick transactions, secure technology, and easy setup.",
-        buttons: ["Know More", "Get Started"],
-      },
-      // {
-      //   key: "s5",
-      //   title: "Working Capital",
-      //   subtitle: "Affordable Loans for Your Growing Business",
-      //   img: "/images/svg/five.webp",
-      //   description:
-      //     "Flexible financing solutions with competitive rates, easy repayment, and quick approvals.",
-      //   buttons: ["Expenses Cards", "Gift Cards"],
-      // },
-    ],
-  },
-  {
-    name: "Identity Verification",
-    slides: [
-      {
-        key: "s6",
-        title: "Identity Verification",
-        subtitle: "Secure and Compliant KYC & KYB Solutions",
-        img: "/images/svg/six.webp",
-        description:
-          "Streamline customer verification while adhering to regulatory standards.",
-        buttons: ["Financial Verification", "Business Verification"],
-      },
-    ],
-  },
-  // {
-  //   name: "Insurance",
-  //   slides: [
-  //     {
-  //       key: "s7",
-  //       title: "Insurance",
-  //       subtitle: "Secure Future, Assured Protection",
-  //       img: "/images/svg/8.webp",
-  //       description:
-  //         "Protect your business with comprehensive insurance solutions.",
-  //       buttons: ["Life Insurance", "Health Insurance", "Motor Insurance"],
-  //     },
-  //   ],
-  // },
-  {
-  name: "QR & Soundbox",
-  slides: [
-    {
-      key: "s7",
-      title: "QR & Soundbox",
-      subtitle: "Accept Payments with Ease",
-      img: "/images/svg/seven.webp", // update path if you have a new icon
-      description:
-        "Seamlessly accept customer payments through QR codes and soundbox alerts. Simplify collections, enhance convenience, and never miss a transaction.",
-      buttons: ["QR Payments", "Soundbox"],
-    },
-  ],
-},
 
   {
-    name: "Other Solution",
-    slides: [
-      {
-        key: "s8",
-        title: "Other Solution",
-        subtitle: "Agent Banking Solutions",
-        img: "/images/svg/eight.webp",
-        description:
-          "Deliver banking services via India’s largest agent banking network.",
-        buttons: ["Know More"],
-      },
+    bg: "#ffffff",
+    img: "/images/slider/s2.webp",
+    title: "UI UX Design",
+    desc: "Design intuitive, engaging digital experiences that users love. Our UI/UX process focuses on usability, accessibility, and clean visual design that drives conversions.",
+    cta: "Design user experience",
+    text: "text-black",
+    tags: [
+      "User research & analysis",
+      "Wireframes & prototypes",
+      "Mobile & web UI design",
+      "Design systems",
+      "Usability testing",
+      "Interaction design",
+    ],
+  },
+
+  {
+    bg: "#FFD400",
+    img: "/images/slider/s3.webp",
+    title: "Web Design",
+    desc: "Modern, responsive websites designed to reflect your brand and engage your audience. We combine creativity with performance-focused layouts.",
+    cta: "Design website today",
+    text: "text-black",
+    tags: [
+      "Responsive web design",
+      "Landing page design",
+      "Custom UI layouts",
+      "Performance-focused design",
+      "SEO-friendly structure",
+      "Conversion optimization",
+    ],
+  },
+
+  {
+    bg: "#ff531a",
+    img: "/images/slider/s4.webp",
+    title: "Build Product (MVP)",
+    desc: "Change your idea into a real product with our MVP development services. We focus on essential features, test with real users, and help you launch fast while saving time and money.",
+    cta: "Design website today",
+    text: "text-white",
+    tags: [
+      "Discovery & MVP Strategy",
+      "UX/UI Design for MVP",
+      "Prototypes & Wireframes",
+      "Front & Back Development",
+      "Third-Party API & Integration",
+      "Quality Assurance & Testing",
+      "Launch & Post-MVP Iteration",
+    ],
+  },
+
+  {
+    bg: "#090909",
+    img: "/images/slider/s5.webp",
+    title: "Webflow",
+    desc: "Build beautiful, fast websites with our Webflow & Framer development services. We make sure your site is easy to use and helps you reach your goals quickly.",
+    cta: "Launch Webflow site",
+    text: "text-white",
+    tags: [
+      "Figma to Webflow Build",
+      "Full Webflow Design + Dev",
+      "CMS Architecture",
+      "Animations & Interactions",
+      "Webflow SEO Setup",
+      "No-code Integrations",
+      "Enterprise Webflow Builds",
     ],
   },
 ];
 
-// ✅ Flatten all slides
-const allSlides = features.flatMap((f) => f.slides);
-
-export default function StackingFeatureScrollFinal() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
-
-  const [activeTab, setActiveTab] = useState(0);
-
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.on("change", (latestValue) => {
-      const newActiveTab = Math.min(
-        Math.floor(latestValue * allSlides.length),
-        allSlides.length - 1
-      );
-      setActiveTab(newActiveTab);
-    });
-    return () => unsubscribe();
-  }, [scrollYProgress]);
-
+export default function Slider() {
   return (
-    <div>
-      <Tabs slides={allSlides} activeTab={activeTab} containerRef={containerRef} />
-      <div
-        ref={containerRef}
-        className="relative bg-white"
-        style={{ height: `${allSlides.length * 120}vh` }}
-      >
-        {allSlides.map((slide, index) => (
-          <StickyCard key={slide.key} slide={slide} index={index} activeTab={activeTab} />
-        ))}
-      </div>
+    <div className="relative" style={{ height: slides.length * SLIDE_HEIGHT }}>
+      {slides.map((s, index) => (
+        <section
+          key={index}
+          className="sticky top-0 h-[510px] flex items-center"
+          style={{
+            backgroundColor: s.bg,
+            zIndex: index + 1, // newer slides on top
+          }}
+        >
+          <div className="w-full px-6 md:px-12 lg:px-20">
+            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-start">
+              {/* LEFT CONTENT */}
+              <div className={`flex-1 ${s.text}`}>
+                <h3 className="text-4xl md:text-6xl font-bold mb-8">
+                  {s.title}
+                </h3>
+
+                <div className="flex flex-col md:flex-row gap-14">
+                  <div className="max-w-md">
+                    <p className="text-md leading-relaxed mb-8">{s.desc}</p>
+
+                    <button className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full font-semibold shadow-md hover:scale-105 transition">
+                      {s.cta}
+                      <span>↗</span>
+                    </button>
+                  </div>
+
+                  {/* TAGS */}
+                  <div className="space-y-2 text-md">
+                    {s.tags.map((tag, i) => (
+                      <p key={i} className="flex items-center gap-3">
+                        <span className="w-2 h-2 rounded-full bg-current" />
+                        {tag}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* RIGHT IMAGE */}
+              <div className="flex-shrink-0 w-full lg:w-[380px]">
+                <div className="relative bg-white p-4 rounded-xl shadow-lg">
+                  <Image
+                    src={s.img}
+                    width={500}
+                    height={500}
+                    alt={s.title}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ))}
     </div>
   );
 }
-
-// ✅ Tabs Navigation
-const Tabs = ({ slides, activeTab, containerRef }) => {
-  const handleTabClick = (index) => {
-    if (!containerRef.current) return;
-    const containerTop = containerRef.current.offsetTop;
-    const scrollableHeight =
-      containerRef.current.scrollHeight - window.innerHeight;
-    const targetScroll =
-      containerTop + (index / slides.length) * scrollableHeight;
-    window.scrollTo({ top: targetScroll, behavior: "smooth" });
-  };
-
-  return (
-    <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-md shadow-sm z-50">
-      <div className="max-w-7xl mx-auto">
-        <ul className="flex justify-between w-full py-7  text-xs sm:text-sm font-medium px-5 sm:px-10 overflow-x-auto">
-          {slides.map((slide, index) => (
-            <li
-              key={slide.key}
-              onClick={() => handleTabClick(index)}
-              className={`cursor-pointer px-3 py-2 whitespace-nowrap transition-all duration-300 ${
-                activeTab === index
-                  ? "text-black border-b-2 border-black font-semibold"
-                  : "text-gray-500 border-b-2 border-transparent hover:text-black"
-              }`}
-            >
-              {slide.title}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-// ✅ Sticky Card per Slide
-const StickyCard = ({ slide }) => {
-  return (
-    <>
-      <div className="h-20 bg-white/70 w-full" />
-      <div className="sticky top-0 flex h-[100vh] items-center justify-center px-4 sm:px-8">
-        <div className="flex h-full w-full max-w-6xl mx-auto flex-col lg:flex-row items-center mt-12 gap-6 sm:gap-10 p-4 sm:p-8 bg-white mb-12">
-          {/* Left Side: Image */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <Image
-              src={slide.img}
-              width={450}
-              height={350}
-              alt={slide.subtitle}
-              className="object-contain"
-            />
-          </div>
-          {/* Right Side: Text Content */}
-          <div className="w-full lg:w-1/2 text-left">
-            <h2 className="text-lg sm:text-xl text-gray-600 font-medium mb-1 sm:mb-2">
-              {slide.title}
-            </h2>
-            <h3 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 leading-tight">
-              {slide.subtitle}
-            </h3>
-            <p className="text-gray-800 text-base sm:text-lg mb-4 sm:mb-6">
-              {slide.description}
-            </p>
-            <div className="flex flex-wrap gap-3 sm:gap-4">
-              {slide.buttons.map((btn, i) => (
-                <button
-                  key={i}
-                  className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
-                >
-                  <PiLinkSimpleBold /> {btn}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};

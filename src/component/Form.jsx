@@ -41,12 +41,12 @@ export default function Form() {
 
           <div>
             <h3 className="text-lg font-semibold mb-3">Schedule a call:</h3>
-            <div className="flex items-center gap-4 bg-white shadow-md rounded-xl p-4 w-fit">
+            <div className="flex items-center  gap-6 bg-white shadow-md rounded-xl p-4 w-fit px-6">
               <Image
                 src="/images/man1.webp"
                 alt="Shahid Miah"
-                width={60}
-                height={60}
+                width={40}
+                height={40}
                 className="rounded-full"
               />
               <div>
@@ -55,9 +55,9 @@ export default function Form() {
                 </p>
                 <p className="text-gray-500 text-sm">Founder & CEO</p>
               </div>
-              <div className="bg-indigo-600 text-white rounded-full p-3 cursor-pointer">
+              {/* <div className="bg-indigo-600 text-white rounded-full p-3 cursor-pointer">
                 📅
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Form() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Full name"
-                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+                className="w-full border border-gray-300 rounded-md p-3 py-2 focus:border-gray-600 focus:outline-none text-sm"
               />
               <input
                 type="email"
@@ -81,7 +81,7 @@ export default function Form() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+                className="w-full border border-gray-300 rounded-md p-3 py-2 focus:border-gray-600 focus:outline-none text-sm"
               />
             </div>
 
@@ -93,14 +93,14 @@ export default function Form() {
                 value={formData.mobile}
                 onChange={handleChange}
                 placeholder="Mobile number"
-                className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+                className="w-full border border-gray-300 rounded-md p-3 py-2 focus:border-gray-600 focus:outline-none text-sm"
               />
 
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
+                className="border border-gray-300 rounded-md p-3 py-2 text-gray-600 focus:border-gray-600 focus:outline-none text-sm"
               >
                 <option value="">Select service</option>
                 <option>UI/UX Design</option>
@@ -119,7 +119,7 @@ export default function Form() {
                 name="budget"
                 value={formData.budget}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
+                className="border border-gray-300 rounded-md p-3 py-2 text-gray-600 focus:border-gray-600 focus:outline-none text-sm"
               >
                 <option value="">Project budget</option>
                 <option>$1,000 - $5,000</option>
@@ -131,7 +131,7 @@ export default function Form() {
                 name="hear"
                 value={formData.hear}
                 onChange={handleChange}
-                className="border border-gray-300 rounded-md p-3 py-4 text-gray-600 focus:border-gray-600 focus:outline-none"
+                className="border border-gray-300 rounded-md p-3 py-2 text-gray-600 focus:border-gray-600 focus:outline-none text-sm"
               >
                 <option value="">How did you hear about us?</option>
                 <option>Google</option>
@@ -147,7 +147,7 @@ export default function Form() {
               onChange={handleChange}
               placeholder="Tell us about your product and goals."
               rows={3}
-              className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none"
+              className="w-full border border-gray-300 rounded-md p-3 py-4 focus:border-gray-600 focus:outline-none text-sm"
             />
 
             {/* Submit */}

@@ -7,19 +7,19 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 pt-20 px-6 md:px-12">
       {/* TOP SECTION */}
-      <div className="flex flex-col   lg:flex-row gap-16 md:gap-15  lg:gap-15 2xl:gap-20 max-w-full md:mx-auto 2xl:px-10">
+      <div className="flex flex-col lg:flex-row gap-16 lg:gap-20 max-w-full md:mx-auto 2xl:px-10">
         {/* Logo & Description */}
-        <div className="lg:w-1/4 md:w-2/3 ">
-          <h2 className="2xl:text-3xl lg:text-2xl  font-bold text-white mb-4">
-            wavespace
+        <div className="lg:w-1/4 md:w-2/3">
+          <h2 className="2xl:text-3xl lg:text-2xl font-bold text-white mb-4">
+            Cashigo
           </h2>
-          <p className="text-[#B9B9B9] leading-relaxed mb-8 md:text-xl lg:text-lg  font-semibold ">
-            Wavespace is a global UI/UX design agency that boosts brand value
-            with user-friendly, effective designs for web, mobile, and SaaS
-            platforms.
+          <p className="text-[#B9B9B9] leading-relaxed mb-8 md:text-xl lg:text-lg font-semibold">
+            Cashigo is a next-generation payment and financial infrastructure
+            platform built to help businesses move money faster, safer, and
+            smarter across digital ecosystems.
           </p>
           <button className="flex items-center justify-between bg-[#E8FF52] text-black font-medium px-6 py-3 rounded-full w-fit hover:bg-[#d9f44d] transition-all cursor-pointer">
-            Company Deck
+            Download Deck
             <span className="ml-2 bg-black text-white rounded-full p-1">
               <ArrowDown size={16} />
             </span>
@@ -27,110 +27,110 @@ export default function Footer() {
         </div>
 
         {/* GRID LINKS */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-col-4 gap-10  md:gap-15 lg:gap-10 2xl:gap-20 flex-1">
-          {/* Services Column 1 */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-14 flex-1">
+          {/* Solutions */}
           <div>
-            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-2xl 2xl:text-3xl">
-              Services
+            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-2xl">
+              Solutions
             </h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-lg lg:text-xl 2xl:text-2xl  font-semibold lg:font-bold">
+            <ul className="space-y-3 text-[#B9B9B9] text-lg lg:text-xl font-semibold">
               <li>
-                <Link href="#">UI UX Design</Link>
+                <Link href="#">Digital Payments</Link>
               </li>
               <li>
-                <Link href="#">Web Design</Link>
+                <Link href="#">Merchant APIs</Link>
               </li>
               <li>
-                <Link href="#">Product Design</Link>
+                <Link href="#">Payouts & Settlements</Link>
               </li>
               <li>
-                <Link href="#">SaaS Design</Link>
+                <Link href="#">Subscription Billing</Link>
               </li>
               <li>
-                <Link href="#">Branding</Link>
+                <Link href="#">Fraud Protection</Link>
               </li>
               <li>
-                <Link href="#">Landing Page Design</Link>
+                <Link href="#">Global Transfers</Link>
               </li>
             </ul>
           </div>
 
-          {/* Services Column 2 */}
-          <div className="mt-10">
-            <ul className="space-y-3 mt-10 sm:mt-0 text-[#B9B9B9] text-lg  lg:text-xl 2xl:text-2xl  font-semibold">
+          {/* Platform */}
+          <div className="mt-10 md:mt-0">
+            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-2xl">
+              Platform
+            </h3>
+            <ul className="space-y-3 text-[#B9B9B9] text-lg lg:text-xl font-semibold">
               <li>
-                <Link href="#">UX Audit</Link>
+                <Link href="#">Cashigo Checkout</Link>
               </li>
               <li>
-                <Link href="#">Mobile App</Link>
+                <Link href="#">Developer Docs</Link>
               </li>
               <li>
-                <Link href="#">Design System</Link>
+                <Link href="#">Integrations</Link>
               </li>
               <li>
-                <Link href="#">Webflow</Link>
+                <Link href="#">Security</Link>
               </li>
               <li>
-                <Link href="#">UX Research</Link>
+                <Link href="#">Compliance</Link>
               </li>
             </ul>
           </div>
 
-          {/* Case Studies */}
+          {/* Company */}
           <div>
-            <h3 className="text-white font-semibold mb-4  md:text-lg lg:text-xl 2xl:text-2xl">
-              Case studies
+            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-2xl">
+              Company
             </h3>
-            <ul className="space-y-3 text-[#B9B9B9] md:text-lg lg:text-xl sm:text-xl font-semibold">
+            <ul className="space-y-3 text-[#B9B9B9] text-lg lg:text-xl font-semibold">
               <li>
-                <Link href="#">Open Hub</Link>
+                <Link href="#">About Cashigo</Link>
               </li>
               <li>
-                <Link href="#">Better AI</Link>
+                <Link href="#">Careers</Link>
               </li>
               <li>
-                <Link href="#">Spacebook</Link>
+                <Link href="#">Press</Link>
               </li>
               <li>
-                <Link href="#">Kodezi</Link>
+                <Link href="#">Partners</Link>
               </li>
               <li>
-                <Link href="#">View all work</Link>
+                <Link href="#">Contact Us</Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Community */}
           <div>
-            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-3xl">
-              Contact
+            <h3 className="text-white font-semibold mb-4 md:text-lg lg:text-2xl">
+              Community
             </h3>
-            <ul className="space-y-3 text-[#B9B9B9] text-lg  lg:text-xl sm:text-xl font-semibold">
+            <ul className="space-y-3 text-[#B9B9B9] text-lg lg:text-xl font-semibold">
+              <li>
+                <Link href="#">LinkedIn</Link>
+              </li>
+              <li>
+                <Link href="#">Twitter</Link>
+              </li>
+              <li>
+                <Link href="#">GitHub</Link>
+              </li>
               <li>
                 <Link href="#">Clutch</Link>
-              </li>
-              <li>
-                <Link href="#">Behance</Link>
-              </li>
-              <li>
-                <Link href="#">Dribbble</Link>
-              </li>
-              <li>
-                <Link href="#">Awwwards</Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* SOCIAL + CONTACT */}
-      <div className="border-b border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-[#B9B9B9] text-lg pb-16 gap-8 md:gap-0">
+      {/* SOCIAL + CTA */}
+      <div className="border-b border-gray-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-[#B9B9B9] text-lg pb-16 gap-8">
         <div className="flex gap-6 flex-wrap">
           <Link href="#" className="hover:text-white">
             Instagram
-          </Link>
-          <Link href="#" className="hover:text-white">
-            Facebook
           </Link>
           <Link href="#" className="hover:text-white">
             LinkedIn
@@ -141,12 +141,12 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-white text-sm mb-1">Let's work together</p>
+          <p className="text-white text-sm mb-1">Start building with Cashigo</p>
           <Link
             href="#"
             className="text-[#E8FF52] text-2xl font-semibold flex items-center gap-2 hover:gap-3 transition-all"
           >
-            Call wavespace
+            Talk to our team
             <span className="bg-[#E8FF52] text-black rounded-full p-2">
               <ArrowUpRight size={18} />
             </span>
@@ -156,16 +156,15 @@ export default function Footer() {
 
       {/* BOTTOM FOOTER */}
       <div className="w-full bg-black py-10 px-6 md:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <h1 className="text-lg text-[#B9B9B9] whitespace-nowrap">
-            wavespace LLC © 2025
+            Cashigo Technologies LLC © 2025
           </h1>
 
           <div className="flex flex-col md:flex-row items-center gap-6">
-            {/* Center Text + Flags */}
-            <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center gap-3">
               <h2 className="text-sm text-[#B9B9B9] leading-tight">
-                Wavespace is a limited liability company based in
+                Cashigo operates globally with teams across
               </h2>
               <div className="flex items-center gap-1">
                 <Image
@@ -189,12 +188,11 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Right Side — Overlapped Team Images */}
+            {/* Team Images */}
             <div className="flex -space-x-3">
               {[
                 "/images/man1.webp",
                 "/images/man2.webp",
-                "/images/man3.webp",
                 "/images/man3.webp",
                 "/images/man3.webp",
                 "/images/man3.webp",
@@ -215,13 +213,14 @@ export default function Footer() {
 
       {/* FULL WIDTH IMAGE */}
       <div className="w-full mt-10">
+        {" "}
         <Image
           src="/images/wavespace.webp"
           alt="wavespace footer banner"
           width={1800}
           height={1000}
           className="w-full object-cover"
-        />
+        />{" "}
       </div>
     </footer>
   );
